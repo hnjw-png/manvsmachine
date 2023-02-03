@@ -18,36 +18,32 @@ header {
     text-align: center;
 }
 
-
-/*sections position*/
-
-section {
+/*game area positioning*/
+.game-area {
     text-align: center;
+    z-index: 1;
+
 }
 
-/*images*/
+/*game images*/
 
 
 #man-start {
     width: 200px;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    float: left;
-    padding:5px;
+    
     
 }
 
 #computer-start {
     width: 200px;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
     float: left;
-    padding: 5px;
+    
+    
     
     
 }
+
+
 
 
 

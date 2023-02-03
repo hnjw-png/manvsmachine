@@ -15,31 +15,31 @@
     <!--title telling what the game-->
     <h1 id = "title">Let's play Rock, Paper, Scissors:</h1>
 
-    <!--two divs holdng the choosen image, that change to what button is clicked (rock, paper or scissors)./*-->
-    <section>
-    <h2>Man:</h2>
-    <div id = "postion">
+    <!--the game area holdng the choosen image, that change to what button is clicked (rock, paper or scissors)./*-->
+       <div id = "game-area">
+        <h2>Man:</h2>
+    <p>0</p>
     <img src = "/assets/images/paper.webp" alt = "paper" id = "man-start">
+    
     <!--the second image for the choices that the computer makes./*-->
     <h2>Computer:</h2>
-    <img src = "/assets/images/scissors.jpeg" alt = "scissors" id = "computer-start"></div>
-    </section>
+    <p>0</p>
+    <img src = "/assets/images/scissors.jpeg" alt = "scissors" id = "computer-start">
+
 
     <!--Three buttons for rock, paper, scissors actions/*-->
-    <section>
+    
 
-    <button class = buttons>Rock</button>
-    <button class = buttons>Paper</button>
-    <button class = buttons>Scissors</button>
+    <button class = "buttons" id = "Rock" >Rock</button>
+    <button class = "buttons" id = "Paper">Paper</button>
+    <button class = "buttons" id="Scissors">Scissors</button>
 
     <!--button to start the game again, as any point the user chooses./*-->
 
-</section>
 
-<section>
+    <button id = "start">Start/Restart!</button>
+</div> 
 
-    <button id = "start-again">Start Again!</button>
-</section>
     <!--a footer with a link to the facebook, the intention is a that you can like the games social media-->
 
     <footer>Did you like the game? Like us on Facebook
