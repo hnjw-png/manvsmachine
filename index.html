@@ -16,34 +16,35 @@
     <h1 id = "title">Let's play Rock, Paper, Scissors:</h1>
 
     <!--the game area holdng the choosen image, that change to what button is clicked (rock, paper or scissors)./*-->
-       <div id = "game-area">
-        <h2>Man:</h2>
-    <p>0</p>
-    <img src = "/assets/images/paper.webp" alt = "paper" id = "man-start">
+       <div id = "scorearea">
+        <div class = "player"></div><h2>Man:<span id = "man-score">0</span></h2>
+    <img src = "/assets/images/paper.webp" alt = "man-photo" id = "man-image" class = "position">
     
     <!--the second image for the choices that the computer makes./*-->
-    <h2>Computer:</h2>
-    <p>0</p>
-    <img src = "/assets/images/scissors.jpeg" alt = "scissors" id = "computer-start">
+    <div id = "computer"><h2>Computer:<span id = "computer-score">0</span></h2>
+    <img src = "/assets/images/scissors.jpeg" alt = "computer-photo" id = "computer-image" class = "position">
+</div></div>
 
 
     <!--Three buttons for rock, paper, scissors actions/*-->
+
+    <div id = "choices">
     
 
-    <button class = "buttons" id = "Rock" >Rock</button>
-    <button class = "buttons" id = "Paper">Paper</button>
-    <button class = "buttons" id="Scissors">Scissors</button>
+    <button aria-label = "Rock" data-choice = "0" class = "buttons" >Rock</button>
+    <button  aria-label =  "Paper" data-choice = "1" class = "buttons" >Paper</button>
+    <button aria-label = "Scissors" data-choice = "2" class = "buttons" >Scissors</button></div> 
 
     <!--button to start the game again, as any point the user chooses./*-->
 
 
     <button id = "start">Start/Restart!</button>
-</div> 
+
 
     <!--a footer with a link to the facebook, the intention is a that you can like the games social media-->
 
     <footer>Did you like the game? Like us on Facebook
-        <button class = "facebook-button"></button>
+        <button aria-label = "facebook" class = "facebook-button"></button>
     </footer>
 
 

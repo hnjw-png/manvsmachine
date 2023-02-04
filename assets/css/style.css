@@ -20,31 +20,25 @@ header {
 
 /*game area positioning*/
 .game-area {
-    text-align: center;
-    z-index: 1;
+    align-items: center;
+
 
 }
 
 /*game images*/
 
 
-#man-start {
-    width: 200px;
-    
-    
+#man-points {
+    width: 45%;
+    float: right;
+
 }
 
-#computer-start {
-    width: 200px;
-    float: left;
-    
-    
-    
-    
+#computer-points {
+    width: 45%;
+    flex: left;
+
 }
-
-
-
 
 
 /*buttons*/
@@ -53,14 +47,18 @@ header {
     color:rgba(32, 165, 194, 0.8);
     font-family: "Lobster";
     font-size: 3rem;
-    margin: 50px 50px 50px;
+    margin: 50px 50px 50px;   
+    clear: both; 
+    
 
 }
 
-#start-again {
+#start {
     color:rgba(32, 165, 194, 0.8);
     font-family: "Lobster";
     font-size: 3rem;
+    clear: both;
+
 }
 
 /*footer*/
@@ -69,7 +67,7 @@ footer {
     color:rgba(32, 165, 194, 0.8);
     font-family: "Lobster";
     font-size: 3rem;
-    margin-top: 50px;
+    clear: both;
     
 }
 
