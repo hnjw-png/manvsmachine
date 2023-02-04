@@ -1,7 +1,5 @@
 //start of code//
 
-//start restart function.//
-
 //declare elements//
 
 const buttons = document.getMyElementByClassName("buttons");
@@ -19,10 +17,12 @@ for (let buttons of buttons) {
 })
 }
 
-//play the game
-function playGame {
-    playerImage.scr = 'assets/images/${choices[player-choice]}.jpeg;
+//play the game, player choice and computers choice//
+function playGame (playerChoice) {
+    playerImage.scr = 'assets/images/${choices[player-choice]}.jpeg';
 
+
+    function playGame (computerChoice) {
 
     let computerChoice = Math.random();
     if (computerChoice <= 0.34){
@@ -33,15 +33,41 @@ function playGame {
         computerChoice = "Scissors" ;
     }
     
-    computerImage.src = 'assets/images/${choices[player-choice]}.jpeg;
+    let computerImage.src = 'assets/images/${choices[player-choice]}.jpeg';}
 }
 
+//logic of playing rock paper scissor//
+function playRound(playerChoice, computerChoice) {
+    if(playerChoice == "Rock" && computerChoice == "Scissors"){
+    return "You win! Rock Beats Scissors!"; 
+}else if(playerChoice == "Scissors" && computerChoice == "Rock"){
+        return "Computer wins! Rock Beats Scissors!"
+    } else if(playerChoice == "Paper" && computerChoice == "Scissors"){
+    return "Computer Wins! Scissors Beats Paper"; 
+    } else if(playerChoice == "Rock" && computerChoice == "Paper"){
+        return "Computer wins! Paper Beats Rock!";
+        } else if(playerChoice == "Paper" && computerChoice == "Rock"){
+            return "You win! Paper Beats Rock";
+        } else if(playerChoice == "Scissors" && computerChoice == "Paper") {
+            return "Yon win! Scissors beats Paper";
+        } else if(playerChoice == computerChoice);{
+            return "Its a draw!";
+        }
+    
+}
 
-
-
+//play three rounds//
+function game(){
+    for(let i = 0, i < 3, i++) {
+        if 
+    }
+}
 //calculate scores according to which of the rock, paper and scissors competes and wins against each other.//
+function incrementScore () ; {
+    if(playerChoice =< computerChoice){
 
-
+    }
+}
 //calculate score best of three rounds
 
 
