@@ -76,3 +76,6 @@ Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` f
 ---
 
 Happy coding!
+
+dont delete me
+https://www.flaticon.com/free-icon/rock-paper-scissors_6832100

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel = "stylesheet" href="/assets/css/style.css">
-    <title>Document</title>
+    <title>Man Vs Machine</title>
 </head>
 <body>
     <!--heading below -->
@@ -17,20 +17,18 @@
 
     <!--the game area holdng the choosen image, that change to what button is clicked (rock, paper or scissors)./*-->
        <div id = "scorearea">
-        <div class = "player"></div><h2>Man:<span id = "man-score">0</span></h2>
-    <img src = "/assets/images/paper.webp" alt = "man-photo" id = "man-image" class = "position">
+        <div id = "player"></div><h2>Man:<span id = "man-score">0</span></h2>
+    <img src = "/assets/images/rps.png" alt = "man-photo" id = "man-image" >
     
     <!--the second image for the choices that the computer makes./*-->
     <div id = "computer"><h2>Computer:<span id = "computer-score">0</span></h2>
-    <img src = "/assets/images/scissors.jpeg" alt = "computer-photo" id = "computer-image" class = "position">
+    <img src = "/assets/images/rps.png" alt = "computer-photo" id = "computer-image" >
 </div></div>
 
 
     <!--Three buttons for rock, paper, scissors actions/*-->
 
     <div id = "choices">
-    
-
     <button aria-label = "Rock" data-choice = "0" class = "buttons" >Rock</button>
     <button  aria-label =  "Paper" data-choice = "1" class = "buttons" >Paper</button>
     <button aria-label = "Scissors" data-choice = "2" class = "buttons" >Scissors</button></div> 
@@ -38,7 +36,7 @@
     <!--button to start the game again, as any point the user chooses./*-->
 
 
-    <button id = "start">Start/Restart!</button>
+    <button aria label = "startagain" id = "start">Start/Restart!</button>
 
 
     <!--a footer with a link to the facebook, the intention is a that you can like the games social media-->
@@ -46,12 +44,22 @@
     <footer>Did you like the game? Like us on Facebook
         <button aria-label = "facebook" class = "facebook-button"></button>
     </footer>
-
-
-
-
-
-
-    <script src="/assets/javascript/scirpt.js"></script>
+    <script src = "assets/javascript/scirpt.js"></script>
 </body>
 </html>
+
+
+
+//play three rounds//
+
+
+//calculate scores according to which of the rock, paper and scissors competes and wins against each other.//
+
+//calculate score best of three rounds//
+
+
+function game() {
+    for (let i = 0, i < 3, i++) {
+        if
+    }
+}
