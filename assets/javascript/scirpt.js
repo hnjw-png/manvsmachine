@@ -14,7 +14,7 @@ for (let button of buttons) {
     button.addEventListener("click", function () {
         let playerChoice = this.getAttribrute("data-choice");
         playGame(playerChoice);
-    })
+    });
 }
 
 //play the game, player choice and computers choice//
@@ -30,27 +30,25 @@ function playGame(playerChoice) {
         playerImage.src = choice["2"].image;
         playerChoice.textContent = choice["2"].name;
     }
+    let computerChoice {
+        if(computerChoice === "0") {
+        computerImage.src = choice["0"].image;
+        computerChoice.textContent = choice["0"].name;
+        } else if(computerChoice === "1") {
+        computerImage.src = choice["1"].image;
+        computerChoice.textContent = choice["1"].name;
+        } else if(computerChoice === "2") {
+        computerImage.src = choice["2"].image;
+        computerChoice.textContent = choice["2"].name;
+    }
+    }
 }
-
-//computer picks rock paper or scissors//
-
 
 //computer choice//
-function playGame(computerChoice) {
-    if(computerChoice === "0") {
-    computerImage.src = choice["0"].image;
-    computerChoice.textContent = choice["0"].name;
-    } else if(computerChoice === "1") {
-    computerImage.src = choice["1"].image;
-    computerChoice.textContent = choice["1"].name;
-    } else if(computerChoice === "2") {
-    computerImage.src = choice["2"].image;
-    computerChoice.textContent = choice["2"].name;
-}
-}
+
 
 //logic of playing rock paper scissor//
-function playRound(playerChoice, computerChoice) {
+function playerScore() {
     if (playerChoice == "Rock" && computerChoice == "Scissors") {
         return "You win! Rock Beats Scissors!";
     } else if (playerChoice == "Scissors" && computerChoice == "Rock") {
@@ -60,18 +58,36 @@ function playRound(playerChoice, computerChoice) {
     } else if (playerChoice == "Rock" && computerChoice == "Paper") {
         return "Computer wins! Paper Beats Rock!";
     } else if (playerChoice == "Paper" && computerChoice == "Rock") {
-        return "You win! Paper Beats Rock";
+        return "You win! Paper Beats Rock!";
     } else if (playerChoice == "Scissors" && computerChoice == "Paper") {
-        return "Yon win! Scissors beats Paper";
+        return "Yon win! Scissors beats Paper!";
     } else if (playerChoice == computerChoice); {
         return "Its a draw!";
     }
 
 }
 
-//play three rounds//
+//computer picks rock paper or scissors maths random//
 
 
-//calculate scores according to which of the rock, paper and scissors competes and wins against each other.//
+function computerScore() {
 
-//calculate score best of three rounds//
+    let computerScore = Math.floor(Math.random()*3);
+    if (computerScore = 0) {
+        computerScore = "Rock";
+    } else if (computerScore = 1) {
+        computerScore = "Paper";
+    } else if (computerScore = 2) {
+        computerScore = "Scissors";
+    } }
+
+
+//score counter, print at title, calulate winner, calculate rounds of three//
+
+
+
+    
+
+
+//function play again//
+
