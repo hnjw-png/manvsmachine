@@ -18,41 +18,31 @@ header {
     text-align: center;
 }
 
-/*game area positioning*/
-.game-area {
-    align-items: center;
-
-
-}
-
-/*game images*/
-#scorearea {
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
 
 /*player score*/
 
 #player {
-    float: left;
-    margin-top: auto;
-    margin-left: 20px;
+    text-align: center;
 }
 
 #computer {
-    float: right;
-    margin-top: auto;
+   text-align: center;
+
 }
 
 #man-image {
-    width: 25%;
+    display: inline-block;
+    margin-left: 200px;
+    margin-right: auto;
+    width: 20%;
     
 }
 
 #computer-image {
-    width: 25%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
     
 
 
@@ -65,19 +55,8 @@ header {
     font-family: "Lobster";
     font-size: 3rem;
     margin: 50px 50px 50px; 
-    justify-content: center;  
-    clear: both; 
     
     
-
-}
-
-#start {
-    color:rgba(32, 165, 194, 0.8);
-    font-family: "Lobster";
-    font-size: 3rem;
-    clear: both;
-
 }
 
 /*footer*/
@@ -85,6 +64,7 @@ header {
 footer {
     color:rgba(32, 165, 194, 0.8);
     font-family: "Lobster";
+    position: absolute;
     font-size: 3rem;
     clear: both;
     

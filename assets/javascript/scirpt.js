@@ -1,24 +1,28 @@
-const buttons = document.getMyElementByClassName("buttons");
-const playerScore = document.getMyElementById("man-score");
-const computerScore = document.getMyElementByiD("computer-score");
-const playerImage = document.getMyElementId("man-image");
-const computerImage = document.getMyElementById("computer-image");
-const choice = ["Rock", "Paper", "Scissors"];
+// const buttons = document.getElementsByClassName("buttons");
+const buttons = document.getElementsByClassName('buttons');
+console.log(buttons);
+// const playerScore = document.getElementsById("man-score");
+// const computerScore = document.getElementsByiD("computer-score");
+const playerImage = document.getElementsId("man-image");
+// const computerImage = document.getElementsById("computer-image");
+// const choice = ["Rock", "Paper", "Scissors"];
 
 //game function
 for (let button of buttons) {
     button.addEventListener("click", function () {
-        let playerChoice = this.getElementByTagName("button");
+        // let playerChoice = this.getElementsByClassName("buttons");
+        let playerChoice = this.innerText;
         playGame(playerChoice);
     });
 }
 
 //play the game, player choice and computers choice//
 function playGame(playerChoice) {
+    console.log("Argument passed into playGame function: ", playerChoice)
     
     if (buttons.textContent === "Rock") {
-        playerImage.src = "/assets/images/rock.jpeg";
-        playerChoice.textContent = choice["0"].name;
+        playerImage.src = "/assets/images/rock.jpeg".image;
+        playerChoice.textContent = choice["Rock"].name;
         return("you clicked rock");
     } else if (buttons.textContent === "Paper") {
         playerImage.src = choice["1"].image;
@@ -48,31 +52,61 @@ function playGame(playerChoice) {
     
 
 
-//logic of playing rock paper scissor//
+//points decider//
 function playerScore() {
     if (playerChoice == "Rock" && computerChoice == "Scissors") {
-        playerScore = "+1" computerScore = "0";
+        playerScore +=1;
+        console.log(playerWins);
     } else if (playerChoice == "Scissors" && computerChoice == "Rock") {
-        playerScore = "+0" computerScore = "+1";
+        playerScore = 0;
+        console.log(computerWins);
     } else if (playerChoice == "Paper" && computerChoice == "Scissors") {
-        return "Computer Wins! Scissors Beats Paper";
+        playerScore = 0;
+        console.log(computerWins);
     } else if (playerChoice == "Rock" && computerChoice == "Paper") {
-        return "Computer wins! Paper Beats Rock!";
+        playerScore = 0;
+        console.log(computerWins);
     } else if (playerChoice == "Paper" && computerChoice == "Rock") {
-        return "You win! Paper Beats Rock!";
+        playerScore +=1;
+        console.log(playerWins);
     } else if (playerChoice == "Scissors" && computerChoice == "Paper") {
-        return "Yon win! Scissors beats Paper!";
+        playerScore +=1;
+        console.log(playerWins);
     } else if (playerChoice == computerChoice); {
-        return "Its a draw!";
+        playerScore +=1;
+        console.log(YouTied);
+    }
+
+    let computerScore;
+     if (playerChoice == "Rock" && computerChoice == "Scissors") {
+        computerScore =0;
+        console.log(playerWins);
+    } else if (playerChoice == "Scissors" && computerChoice == "Rock") {
+        computerScore +=1;
+        console.log(computerWins);
+    } else if (playerChoice == "Paper" && computerChoice == "Scissors") {
+        computerScore +=1;
+        console.log(computerWins);
+    } else if (playerChoice == "Rock" && computerChoice == "Paper") {
+        computerScore +=1;
+        console.log(computerWins);
+    } else if (playerChoice == "Paper" && computerChoice == "Rock") {
+        computerScore =0;
+        console.log(playerWins);
+    } else if (playerChoice == "Scissors" && computerChoice == "Paper") {
+        computerScore =0;
+        console.log(computerWins);
+    } else if (playerChoice == computerChoice); {
+        computerScore +=1;
+        console.log(YouTied);
     }
 
 }
 
-//computer picks rock paper or scissors maths random//
 
+//score counter, who makes it to 3 poins first wins//
+let score = "0";
 
-
-//score counter, print at title, calulate winner, calculate rounds of three//
 
 
 

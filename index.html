@@ -16,14 +16,13 @@
     <h1 id = "title">Let's play Rock, Paper, Scissors:</h1>
 
     <!--the game area holdng the choosen image, that change to what button is clicked (rock, paper or scissors)./*-->
-       <div id = "scorearea">
-        <div id = "player"></div><h2>Man:<span id = "man-score">0</span></h2>
+       <section>
+        <div id = "player"></div><h2>Man:<span id = "man-score">0</span></h2></div>
     <img src = "/assets/images/rps.png" alt = "rock, paper, scissors" id = "man-image" >
     
     <!--the second image for the choices that the computer makes./*-->
-    <div id = "computer"><h2>Computer:<span id = "computer-score">0</span></h2>
+    <div id = "computer"><h2>Computer:<span id = "computer-score">0</span></h2></div>
     <img src = "/assets/images/rps.png" alt = "rock, paper, scissors" id = "computer-image">
-</div></div>
 
 
     <!--Three buttons for rock, paper, scissors actions/*-->
@@ -33,10 +32,9 @@
     <button  aria-label =  "Paper" data-choice = "1" class = "buttons" >Paper</button>
     <button aria-label = "Scissors" data-choice = "2" class = "buttons" >Scissors</button></div> 
 
+</section>
+
     <!--button to start the game again, as any point the user chooses./*-->
-
-
-    <button aria label = "startagain" id = "start">Start/Restart!</button>
 
 
     <!--a footer with a link to the facebook, the intention is a that you can like the games social media-->
@@ -44,7 +42,7 @@
     <footer>Did you like the game? Like us on Facebook
         <button aria-label = "facebook" class = "facebook-button"></button>
     </footer>
-    <script src = "assets/javascript/scirpt.js"></script>
+    <script src = "assets/javascript/scirpt.js" defer></script>
 </body>
 </html>
 
