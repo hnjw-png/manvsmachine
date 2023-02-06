@@ -1,7 +1,3 @@
-//start of code//
-
-//declare elements//
-
 const buttons = document.getMyElementByClassName("buttons");
 const playerScore = document.getMyElementById("man-score");
 const computerScore = document.getMyElementByiD("computer-score");
@@ -30,7 +26,9 @@ function playGame(playerChoice) {
         playerImage.src = choice["2"].image;
         playerChoice.textContent = choice["2"].name;
     }
-    let computerChoice {
+    let computerChoice = Math.floor(Math.random()*3);
+
+    {
         if(computerChoice === "0") {
         computerImage.src = choice["0"].image;
         computerChoice.textContent = choice["0"].name;
@@ -41,18 +39,19 @@ function playGame(playerChoice) {
         computerImage.src = choice["2"].image;
         computerChoice.textContent = choice["2"].name;
     }
-    }
-}
 
-//computer choice//
+    }}
+    
+    
+    
 
 
 //logic of playing rock paper scissor//
 function playerScore() {
     if (playerChoice == "Rock" && computerChoice == "Scissors") {
-        return "You win! Rock Beats Scissors!";
+        playerScore = "+1" computerScore = "0";
     } else if (playerChoice == "Scissors" && computerChoice == "Rock") {
-        return "Computer wins! Rock Beats Scissors!"
+        playerScore = "+0" computerScore = "+1";
     } else if (playerChoice == "Paper" && computerChoice == "Scissors") {
         return "Computer Wins! Scissors Beats Paper";
     } else if (playerChoice == "Rock" && computerChoice == "Paper") {
@@ -70,7 +69,6 @@ function playerScore() {
 //computer picks rock paper or scissors maths random//
 
 
-function computerScore() {
 
     let computerScore = Math.floor(Math.random()*3);
     if (computerScore = 0) {
