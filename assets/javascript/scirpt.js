@@ -3,7 +3,7 @@ const buttons = document.getElementsByClassName('buttons');
 console.log(buttons);
 // const playerScore = document.getElementsById("man-score");
 // const computerScore = document.getElementsByiD("computer-score");
-const playerImage = document.getElementsId("man-image");
+const playerImage = document.getElementsById("man-image");
 // const computerImage = document.getElementsById("computer-image");
 // const choice = ["Rock", "Paper", "Scissors"];
 
@@ -47,10 +47,6 @@ function playGame(playerChoice) {
     }
 
     }}
-    
-    
-    
-
 
 //points decider//
 function playerScore() {
@@ -103,9 +99,24 @@ function playerScore() {
 
 }
 
-
 //score counter, who makes it to 3 poins first wins//
-let score = "0";
+let score = 0;{
+if (playerChoice >= 2 && computerChoice >= 2);{
+console.log(Tie);}
+else if (playerChoice >= 2 && computerChoice <= 1);{
+console.log(manWins);}
+else if (playerChoice <= 1 && computerChoice >=2);{
+console.log(computerWins);} 
+drawScore
+}
+let roundsPlayed = 0;{
+    if(let i = 0, i < 3, i++);
+    endGame();
+}
+let userScore = 0;
+let computerScore = 0;
+
+
 
 
 
