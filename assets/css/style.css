@@ -32,31 +32,31 @@ header {
 
 }
 
-#man-image {
-    width: 25%;
-    float: right;
-    margin: 40px 200px 15px;
-
-}
-
-#computer-image {
-    width: 25%;
-    flex: left;
-    margin: 0px 120px 15px;
-
-
-}
 
 /*player score*/
 
 #player {
     float: left;
+    margin-top: auto;
+    margin-left: 20px;
 }
 
 #computer {
     float: right;
+    margin-top: auto;
 }
 
+#man-image {
+    width: 25%;
+    
+}
+
+#computer-image {
+    width: 25%;
+    
+
+
+}
 
 /*buttons*/
 

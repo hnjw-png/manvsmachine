@@ -8,7 +8,7 @@ const choice = ["Rock", "Paper", "Scissors"];
 //game function
 for (let button of buttons) {
     button.addEventListener("click", function () {
-        let playerChoice = this.getAttribrute("data-choice");
+        let playerChoice = this.getElementByTagName("button");
         playGame(playerChoice);
     });
 }
@@ -17,8 +17,9 @@ for (let button of buttons) {
 function playGame(playerChoice) {
     
     if (buttons.textContent === "Rock") {
-        playerImage.src = choice["0"].image;
+        playerImage.src = "/assets/images/rock.jpeg";
         playerChoice.textContent = choice["0"].name;
+        return("you clicked rock");
     } else if (buttons.textContent === "Paper") {
         playerImage.src = choice["1"].image;
         playerChoice.textContent = choice["1"].name;
@@ -26,6 +27,7 @@ function playGame(playerChoice) {
         playerImage.src = choice["2"].image;
         playerChoice.textContent = choice["2"].name;
     }
+
     let computerChoice = Math.floor(Math.random()*3);
 
     {
@@ -68,16 +70,6 @@ function playerScore() {
 
 //computer picks rock paper or scissors maths random//
 
-
-
-    let computerScore = Math.floor(Math.random()*3);
-    if (computerScore = 0) {
-        computerScore = "Rock";
-    } else if (computerScore = 1) {
-        computerScore = "Paper";
-    } else if (computerScore = 2) {
-        computerScore = "Scissors";
-    } }
 
 
 //score counter, print at title, calulate winner, calculate rounds of three//
