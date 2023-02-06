@@ -10,6 +10,9 @@ header {
     color: rgba(32, 165, 194, 0.8);
     font-size: 5rem;
     text-align: center;
+    border-top: solid 5px;
+    border-bottom: solid 5px;
+    width: 100%;
 }
 
 #title {
@@ -26,23 +29,24 @@ header {
 }
 
 #computer {
-   text-align: center;
+    text-align: center;
+  
 
 }
 
 #man-image {
-    display: inline-block;
-    margin-left: 200px;
+    margin-left: 45%;
     margin-right: auto;
-    width: 20%;
+    width: 10%;
+    text-align: center;
     
 }
 
 #computer-image {
-    display: inline-block;
-    margin-left: auto;
+    margin-left: 45%;
     margin-right: auto;
-    width: 20%;
+    width: 10%;
+    text-align: center;
     
 
 
@@ -50,11 +54,16 @@ header {
 
 /*buttons*/
 
+#choices {
+    text-align: center;
+}
+
 .buttons {
     color:rgba(32, 165, 194, 0.8);
     font-family: "Lobster";
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 50px 50px 50px; 
+    margin-top: 20px;
     
     
 }
@@ -65,8 +74,11 @@ footer {
     color:rgba(32, 165, 194, 0.8);
     font-family: "Lobster";
     position: absolute;
-    font-size: 3rem;
+    font-size: 2rem;
+    border-top: solid 5px;
+    width: 100%;
     clear: both;
     
 }
 
+//edit if i cannot get both images to align, use one image, and change for computer and man.

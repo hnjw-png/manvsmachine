@@ -100,6 +100,7 @@ function playerScore() {
 }
 
 //score counter, who makes it to 3 poins first wins//
+
 let score = 0;{
 if (playerChoice >= 2 && computerChoice >= 2);{
 console.log(Tie);}
@@ -109,12 +110,12 @@ else if (playerChoice <= 1 && computerChoice >=2);{
 console.log(computerWins);} 
 drawScore
 }
+
+
 let roundsPlayed = 0;{
     if(let i = 0, i < 3, i++);
     endGame();
 }
-let userScore = 0;
-let computerScore = 0;
 
 
 
