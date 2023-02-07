@@ -1,11 +1,11 @@
 // const buttons = document.getElementsByClassName("buttons");
 const buttons = document.getElementsByClassName('buttons');
 console.log(buttons);
-// const playerScore = document.getElementsById("man-score");
-// const computerScore = document.getElementsByiD("computer-score");
-const playerImage = document.getElementsById("man-image");
-// const computerImage = document.getElementsById("computer-image");
-// const choice = ["Rock", "Paper", "Scissors"];
+let playerScore = document.getElementsById("man-score");
+let computerScore = document.getElementsById("computer-score");
+let playerImage = document.getElementsById("man-image");
+let computerImage = document.getElementsById("computer-image");
+const choice = ["Rock", "Paper", "Scissors"];
 
 //game function
 for (let button of buttons) {
@@ -22,14 +22,11 @@ function playGame(playerChoice) {
     
     if (buttons.textContent === "Rock") {
         playerImage.src = "/assets/images/rock.jpeg".image;
-        playerChoice.textContent = choice["Rock"].name;
-        return("you clicked rock");
+        console.log("you clicked rock");
     } else if (buttons.textContent === "Paper") {
         playerImage.src = choice["1"].image;
-        playerChoice.textContent = choice["1"].name;
     } else if  (buttons.textContent === "Scissors") {
         playerImage.src = choice["2"].image;
-        playerChoice.textContent = choice["2"].name;
     }
 
     let computerChoice = Math.floor(Math.random()*3);
@@ -37,19 +34,16 @@ function playGame(playerChoice) {
     {
         if(computerChoice === "0") {
         computerImage.src = choice["0"].image;
-        computerChoice.textContent = choice["0"].name;
         } else if(computerChoice === "1") {
         computerImage.src = choice["1"].image;
-        computerChoice.textContent = choice["1"].name;
         } else if(computerChoice === "2") {
         computerImage.src = choice["2"].image;
-        computerChoice.textContent = choice["2"].name;
     }
 
     }}
 
 //points decider//
-function playerScore() {
+function incrementScore() {
     if (playerChoice == "Rock" && computerChoice == "Scissors") {
         playerScore +=1;
         console.log(playerWins);
@@ -73,7 +67,6 @@ function playerScore() {
         console.log(YouTied);
     }
 
-    let computerScore;
      if (playerChoice == "Rock" && computerChoice == "Scissors") {
         computerScore =0;
         console.log(playerWins);
@@ -101,23 +94,20 @@ function playerScore() {
 
 //score counter, who makes it to 3 poins first wins//
 
-let score = 0;{
-if (playerChoice >= 2 && computerChoice >= 2);{
-console.log(Tie);}
-else if (playerChoice >= 2 && computerChoice <= 1);{
-console.log(manWins);}
-else if (playerChoice <= 1 && computerChoice >=2);{
-console.log(computerWins);} 
-drawScore
-}
+let score = 0;
+if (playerChoice >= 2 && computerChoice >= 2) {
+  console.log('Tie');
+} else if (playerChoice >= 2 && computerChoice <= 1) {
+  console.log('manWins');
+} else if (playerChoice <= 1 && computerChoice >= 2) {
+  console.log('computerWins');
+} 
+drawScore();
 
-
-let roundsPlayed = 0;{
-    if(let i = 0, i < 3, i++);
+let roundsPlayed = 0;
+for (let i = 0; i < 3; i++) {
     endGame();
 }
-
-
 
 
 
