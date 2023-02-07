@@ -1,13 +1,13 @@
 // const buttons = document.getElementsByClassName("buttons");
 const buttons = document.getElementsByClassName('buttons');
 console.log(buttons);
-let playerScore = document.getElementsById("man-score");
-let computerScore = document.getElementsById("computer-score");
-let playerImage = document.getElementsById("man-image");
-let computerImage = document.getElementsById("computer-image");
+let playerScore = document.getElementById("man-score");
+let computerScore = document.getElementById("computer-score");
+let playerImage = document.getElementById("man-image");
+let computerImage = document.getElementById("computer-image");
 const choice = ["Rock", "Paper", "Scissors"];
 
-//game function
+//game function for clicking the as a user//
 for (let button of buttons) {
     button.addEventListener("click", function () {
         // let playerChoice = this.getElementsByClassName("buttons");
@@ -21,23 +21,25 @@ function playGame(playerChoice) {
     console.log("Argument passed into playGame function: ", playerChoice)
     
     if (buttons.textContent === "Rock") {
-        playerImage.src = "/assets/images/rock.jpeg".image;
+        playerImage.src = getMyElementsByClassName("rock-click").image;
         console.log("you clicked rock");
     } else if (buttons.textContent === "Paper") {
-        playerImage.src = choice["1"].image;
+        playerImage.src = getMyElementsByClassName("paper-click").image;
+        console.log("you clicked paper")
     } else if  (buttons.textContent === "Scissors") {
-        playerImage.src = choice["2"].image;
+        playerImage.src = getMyElementsByClassName("scissors").image;
+        console.log("you clicked scissors");
     }
 
     let computerChoice = Math.floor(Math.random()*3);
 
     {
         if(computerChoice === "0") {
-        computerImage.src = choice["0"].image;
+        computerImage.src = getElementsByClassName("rock-click").image;
         } else if(computerChoice === "1") {
-        computerImage.src = choice["1"].image;
+        computerImage.src = getElementsByClassName("paper-click").image;
         } else if(computerChoice === "2") {
-        computerImage.src = choice["2"].image;
+        computerImage.src = getMyElementsByClassName("scissors-click").image;
     }
 
     }}
@@ -89,20 +91,30 @@ function incrementScore() {
         computerScore +=1;
         console.log(YouTied);
     }
+    
 
 }
 
-//score counter, who makes it to 3 poins first wins//
+//score counter, who makes it to 3 points first wins//
 
 let score = 0;
-if (playerChoice >= 2 && computerChoice >= 2) {
+if (playerScore >= 2 && computerScore >= 2) {
+    print.toString.getElementById("Man-score").print("0")
+    print.toString.getElementsById("Computer-score").print("0");
   console.log('Tie');
-} else if (playerChoice >= 2 && computerChoice <= 1) {
+} else if (playerScore >= 2 && computerScore <= 1) {
+    print.toString.getElementById("Man-score").print("1")
+    print.toString.getElementsById("Computer-score").print("0");
   console.log('manWins');
-} else if (playerChoice <= 1 && computerChoice >= 2) {
+} else if (playerScore <= 1 && computerScore >= 2) {
+    print.toString.getElementById("Man-score").print("0")
+    print.toString.getElementsById("Computer-score").("1");
   console.log('computerWins');
 } 
 drawScore();
+
+
+
 
 let roundsPlayed = 0;
 for (let i = 0; i < 3; i++) {
