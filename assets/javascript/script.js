@@ -20,13 +20,13 @@ for (let button of buttons) {
 function playGame(playerChoice) {
     console.log("Argument passed into playGame function: ", playerChoice)
     
-    if (buttons.textContent === "Rock") {
+    if (buttons.textContent == "Rock") {
         playerImage.src = getMyElementsByClassName("rock-click").image;
         console.log("you clicked rock");
-    } else if (buttons.textContent === "Paper") {
+    } else if (buttons.textContent == "Paper") {
         playerImage.src = getMyElementsByClassName("paper-click").image;
         console.log("you clicked paper")
-    } else if  (buttons.textContent === "Scissors") {
+    } else if  (buttons.textContent == "Scissors") {
         playerImage.src = getMyElementsByClassName("scissors").image;
         console.log("you clicked scissors");
     }
@@ -96,7 +96,7 @@ function incrementScore() {
 }
 
 //score counter, who makes it to 3 points first wins//
-
+function drawScore();
 let score = 0;
 if (playerScore >= 2 && computerScore >= 2) {
     print.toString.getElementById("Man-score").print("0")
@@ -108,24 +108,14 @@ if (playerScore >= 2 && computerScore >= 2) {
   console.log('manWins');
 } else if (playerScore <= 1 && computerScore >= 2) {
     print.toString.getElementById("Man-score").print("0")
-    print.toString.getElementsById("Computer-score").("1");
+    print.toString.getElementsById("Computer-score").print("1");
   console.log('computerWins');
 } 
-drawScore();
 
 
 
-
+function roundsPlayed()
 let roundsPlayed = 0;
 for (let i = 0; i < 3; i++) {
     endGame();
 }
-
-
-
-
-    
-
-
-//function play again//
-
