@@ -24,10 +24,10 @@ function playGame(playerChoice) {
         playerImage = getMyElementByIdName('Image').src = "rock.jpg";
         console.log("you clicked rock");
     } else if (buttons.textContent == "Paper") {
-        playerImage.onclick = getMyElementByIdName('myImage').src = "paper.jpg";
+        playerImage.onclick = this.getMyElementByIdName('myImage').src = "paper.jpg";
         console.log("you clicked paper")
     } else if  (buttons.textContent == "Scissors") {
-        playerImage.onclick = getMyElementByIdName('myImage').src = "scissors.jpg";
+        playerImage.onclick = this.getMyElementByIdName('myImage').src = "scissors.jpg";
         console.log("you clicked scissors");
     }
 
@@ -35,11 +35,11 @@ function playGame(playerChoice) {
 
     {
         if(computerChoice == "0") {
-            computerImage.onclick = getMyElementByIdName('myImage').src = "rock.jpg";
+            computerImage.onclick = this.getMyElementByIdName('myImage').src = "rock.jpg";
         } else if(computerChoice == "1") {
-            computerImage.onclick = getMyElementByIdName('myImage').src = "paper.jpg";
+            computerImage.onclick = this.getMyElementByIdName('myImage').src = "paper.jpg";
         } else if(computerChoice == "2") {
-            computerImage.onclick = getMyElementByIdName('myImage').src = "scissors.jpg";
+            computerImage.onclick = this.getMyElementByIdName('myImage').src = "scissors.jpg";
     }
 
     }}
