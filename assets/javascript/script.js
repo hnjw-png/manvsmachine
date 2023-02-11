@@ -21,25 +21,25 @@ function playGame(playerChoice) {
     console.log("Argument passed into playGame function: ", playerChoice)
     
     if (buttons.textContent == "Rock") {
-        playerImage.src = getMyElementsByClassName("rock-click").image;
+        playerImage = getMyElementByIdName('Image').src = "rock.jpg";
         console.log("you clicked rock");
     } else if (buttons.textContent == "Paper") {
-        playerImage.src = getMyElementsByClassName("paper-click").image;
+        playerImage.onclick = getMyElementByIdName('myImage').src = "paper.jpg";
         console.log("you clicked paper")
     } else if  (buttons.textContent == "Scissors") {
-        playerImage.src = getMyElementsByClassName("scissors").image;
+        playerImage.onclick = getMyElementByIdName('myImage').src = "scissors.jpg";
         console.log("you clicked scissors");
     }
 
     let computerChoice = Math.floor(Math.random()*3);
 
     {
-        if(computerChoice === "0") {
-        computerImage.src = getElementsByClassName("rock-click").image;
-        } else if(computerChoice === "1") {
-        computerImage.src = getElementsByClassName("paper-click").image;
-        } else if(computerChoice === "2") {
-        computerImage.src = getMyElementsByClassName("scissors-click").image;
+        if(computerChoice == "0") {
+            computerImage.onclick = getMyElementByIdName('myImage').src = "rock.jpg";
+        } else if(computerChoice == "1") {
+            computerImage.onclick = getMyElementByIdName('myImage').src = "paper.jpg";
+        } else if(computerChoice == "2") {
+            computerImage.onclick = getMyElementByIdName('myImage').src = "scissors.jpg";
     }
 
     }}
@@ -96,26 +96,30 @@ function incrementScore() {
 }
 
 //score counter, who makes it to 3 points first wins//
-function drawScore();
-let score = 0;
+function drawScore(){
 if (playerScore >= 2 && computerScore >= 2) {
-    print.toString.getElementById("Man-score").print("0")
-    print.toString.getElementsById("Computer-score").print("0");
+    let manScore = getElementById("Man-score");
+    let computerScore = getElementById("Computer-score");
+    manScore.innerText = score;
+    computerScore.innerText = score;
   console.log('Tie');
 } else if (playerScore >= 2 && computerScore <= 1) {
-    print.toString.getElementById("Man-score").print("1")
-    print.toString.getElementsById("Computer-score").print("0");
+    let manScore = getElementById("Man-score");
+    let computerScore = getElementById("Computer-score");
+    manScore.innerText = score;
+    computerScore.innerText = score;
   console.log('manWins');
 } else if (playerScore <= 1 && computerScore >= 2) {
-    print.toString.getElementById("Man-score").print("0")
-    print.toString.getElementsById("Computer-score").print("1");
+    let manScore = getElementById("Man-score");
+    let computerScore = getElementById("Computer-score");
+    manScore.innerText = score;
+    computerScore.innerText = score;
   console.log('computerWins');
 } 
+}
 
-
-
-function roundsPlayed()
-let roundsPlayed = 0;
+function roundsPlayed(){
 for (let i = 0; i < 3; i++) {
     endGame();
+}
 }
