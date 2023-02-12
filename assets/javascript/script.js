@@ -21,101 +21,133 @@ function playGame(playerChoice) {
     console.log("Argument passed into playGame function: ", playerChoice)
     
     if (buttons.textContent == "Rock") {
-        playerImage = getMyElementByIdName('Image').src = "rock.jpg";
+        document.getElementById("rock-click").style.display ='block';
+        document.getElementById("paper-click").style.display ='none';
+        document.getElementById("scissors-click").style.display ='none';
         console.log("you clicked rock");
     } else if (buttons.textContent == "Paper") {
-        playerImage.onclick = this.getMyElementByIdName('myImage').src = "paper.jpg";
+        document.getElementById("paper-click").style.display ='block';
+        document.getElementById("rock-click").style.display ='none';
+        document.getElementById("scissors-click").style.display ='none';
         console.log("you clicked paper")
     } else if  (buttons.textContent == "Scissors") {
-        playerImage.onclick = this.getMyElementByIdName('myImage').src = "scissors.jpg";
+        document.getElementById("scissors-click").style.display ='block';
+        document.getElementById("rock-click").style.display ='none';
+        document.getElementById("paper-click").style.display ='none';
         console.log("you clicked scissors");
-    }
+    }}
+
+
+    function clickEvent(); {
 
     let computerChoice = Math.floor(Math.random()*3);
+    
 
     {
-        if(computerChoice == "0") {
-            computerImage.onclick = this.getMyElementByIdName('myImage').src = "rock.jpg";
-        } else if(computerChoice == "1") {
-            computerImage.onclick = this.getMyElementByIdName('myImage').src = "paper.jpg";
-        } else if(computerChoice == "2") {
-            computerImage.onclick = this.getMyElementByIdName('myImage').src = "scissors.jpg";
+        if(computerChoice == "rock") {
+            document.getElementById("rock-click").style.display ='block';
+        document.getElementById("paper-click").style.display ='none';
+        document.getElementById("scissors-click").style.display ='none';
+        } else if(computerChoice == "paper") {
+            document.getElementById("paper-click").style.display ='block';
+        document.getElementById("rock-click").style.display ='none';
+        document.getElementById("scissors-click").style.display ='none';
+        } else if(computerChoice == "scissors") {
+            document.getElementById("scissors-click").style.display ='block';
+        document.getElementById("rock-click").style.display ='none';
+        document.getElementById("paper-click").style.display ='none';
+        console.log("you clicked scissors");
     }
 
     }}
 
 //points decider//
-function incrementScore() {
-    if (playerChoice == "Rock" && computerChoice == "Scissors") {
-        playerScore +=1;
+function incrementScore(manScore) {
+    if (manScore == "Rock" && computerScore == "Scissors") {
+        manScore +=1;
         console.log(playerWins);
-    } else if (playerChoice == "Scissors" && computerChoice == "Rock") {
+    } else if (playerChoice == "Scissors" && computerScore== "Rock") {
         playerScore = 0;
         console.log(computerWins);
-    } else if (playerChoice == "Paper" && computerChoice == "Scissors") {
+    } else if (playerChoice == "Paper" && computerScore == "Scissors") {
         playerScore = 0;
         console.log(computerWins);
-    } else if (playerChoice == "Rock" && computerChoice == "Paper") {
+    } else if (playerChoice == "Rock" && computerScore == "Paper") {
         playerScore = 0;
         console.log(computerWins);
-    } else if (playerChoice == "Paper" && computerChoice == "Rock") {
+    } else if (playerChoice == "Paper" && computerScore == "Rock") {
         playerScore +=1;
         console.log(playerWins);
-    } else if (playerChoice == "Scissors" && computerChoice == "Paper") {
+    } else if (playerChoice == "Scissors" && computerScore == "Paper") {
         playerScore +=1;
         console.log(playerWins);
-    } else if (playerChoice == computerChoice); {
+    } else if (playerChoice == computerScore); {
         playerScore +=1;
         console.log(YouTied);
     }
+
+    let = computerScore(); {
 
      if (playerChoice == "Rock" && computerChoice == "Scissors") {
         computerScore =0;
         console.log(playerWins);
-    } else if (playerChoice == "Scissors" && computerChoice == "Rock") {
+    } else if (playerChoice == "Scissors" && computerScore == "Rock") {
         computerScore +=1;
         console.log(computerWins);
-    } else if (playerChoice == "Paper" && computerChoice == "Scissors") {
+    } else if (playerChoice == "Paper" && computerScore == "Scissors") {
         computerScore +=1;
         console.log(computerWins);
-    } else if (playerChoice == "Rock" && computerChoice == "Paper") {
+    } else if (playerChoice == "Rock" && computerScore == "Paper") {
         computerScore +=1;
         console.log(computerWins);
-    } else if (playerChoice == "Paper" && computerChoice == "Rock") {
+    } else if (playerChoice == "Paper" && computerScore == "Rock") {
         computerScore =0;
         console.log(playerWins);
-    } else if (playerChoice == "Scissors" && computerChoice == "Paper") {
+    } else if (playerChoice == "Scissors" && computerScore == "Paper") {
         computerScore =0;
         console.log(computerWins);
-    } else if (playerChoice == computerChoice); {
+    } else if (playerChoice == computerScore); {
         computerScore +=1;
         console.log(YouTied);
     }
     
-
 }
+};
 
 //score counter, who makes it to 3 points first wins//
 function drawScore(){
-if (playerScore >= 2 && computerScore >= 2) {
+
     let manScore = getElementById("Man-score");
-    let computerScore = getElementById("Computer-score");
-    manScore.innerText = score;
-    computerScore.innerText = score;
+    //let computerScore = getElementById("computer-score");
+
+if (playerScore >= 2 && computerScore >= 2) {
+    manScore.innerText = 1;
+    computerScore.innerText = 1;
   console.log('Tie');
 } else if (playerScore >= 2 && computerScore <= 1) {
-    let manScore = getElementById("Man-score");
-    let computerScore = getElementById("Computer-score");
-    manScore.innerText = score;
-    computerScore.innerText = score;
+    manScore.innerText = 1;
+    computerScore.innerText = 0;
   console.log('manWins');
 } else if (playerScore <= 1 && computerScore >= 2) {
-    let manScore = getElementById("Man-score");
-    let computerScore = getElementById("Computer-score");
-    manScore.innerText = score;
-    computerScore.innerText = score;
+    manScore.innerText = 0;
+    computerScore.innerText = 1;
   console.log('computerWins');
 } 
+let computerScore = getElementById("computer-score");
+if (playerScore >= 2 && computerScore >= 2) {
+    manScore.innerText = 1;
+    computerScore.innerText = 1;
+  console.log('Tie');
+} else if (playerScore >= 2 && computerScore <= 1) {
+    manScore.innerText = 1;
+    computerScore.innerText = 0;
+  console.log('manWins');
+} else if (playerScore <= 1 && computerScore >= 2) {
+    manScore.innerText = 0;
+    computerScore.innerText = 1;
+  console.log('computerWins');}
+
+
 }
 
 function roundsPlayed(){
