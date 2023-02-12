@@ -38,7 +38,7 @@ function playGame(playerChoice) {
     }}
 
 
-    function clickEvent(); {
+    function clickEvent(computerScore); {
 
     let computerChoice = Math.floor(Math.random()*3);
     
@@ -150,7 +150,7 @@ if (playerScore >= 2 && computerScore >= 2) {
 
 }
 
-function roundsPlayed(){
+function roundsPlayed();{
 for (let i = 0; i < 3; i++) {
     endGame();
 }
