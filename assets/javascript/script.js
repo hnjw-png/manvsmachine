@@ -16,12 +16,12 @@ for (let button of buttons) {
     button.addEventListener("click", function () {
         // let playerChoice = this.getElementsByClassName("buttons");
         let playerChoice = this.innerText;
-        playGame(playerChoice);
+        playGame(playerChoice, computerChoice);
     });
 }
 
 //play the game, player choice and computers choice//
-function playGame(playerChoice) {
+function playGame(playerChoice){
     console.log("Argument passed into playGame function: ", playerChoice)
 
     
@@ -30,77 +30,74 @@ function playGame(playerChoice) {
         console.log("you clicked rock");
     } else if (playerChoice == "Paper") {
         playerImage.src = 'assets/images/paper.jpg';
-        console.log("you clicked paper")
-    } else if  (buttons.textContent == "Scissors") {
-        playerImage.src = 'assets/images/paper.jpg';
+        console.log("you clicked paper");
+    } else if  (playerChoice == "Scissors") {
+        playerImage.src = 'assets/images/scissors.jpg';
         console.log("you clicked scissors");
-    }}
+    }
 
 
     let computerChoice = Math.floor(Math.random()*3);
+    console.log(computerChoice);
     
 
-    {
+
         if(choice == "0") {
-            document.getElementById("rock-click").style.display ='block';
-        document.getElementById("paper-click").style.display ='none';
-        document.getElementById("scissors-click").style.display ='none';
+            computerImage.src = 'assets/images/rock.jpg'
         } else if(computerChoice == "1") {
-            document.getElementById("paper-click").style.display ='block';
-        document.getElementById("rock-click").style.display ='none';
-        document.getElementById("scissors-click").style.display ='none';
+            computerImage.src = 'assets/images/paper.jpg'
         } else if(computerChoice == "2") {
-            document.getElementById("scissors-click").style.display ='block';
-        document.getElementById("rock-click").style.display ='none';
-        document.getElementById("paper-click").style.display ='none';
-        console.log("you clicked scissors");
+            computerImage.src = 'assets/images/scissors.jpg'
     }
 
     }
 
 //points decider//
-function incrementScore(manScore) {
-    if (manScore == "Rock" && computerScore == "Scissors") {
-        manScore +=1;
-        console.log(playerWins);
-    } else if (playerChoice == "Scissors" && computerScore== "Rock") {
-        playerScore = 0;
-        console.log(computerWins);
-    } else if (playerChoice == "Paper" && computerScore == "Scissors") {
-        playerScore = 0;
-        console.log(computerWins);
-    } else if (playerChoice == "Rock" && computerScore == "Paper") {
-        playerScore = 0;
-        console.log(computerWins);
-    } else if (playerChoice == "Paper" && computerScore == "Rock") {
+function incrementScore() {
+
+    let playerScore; {
+
+    if (playerChoice == "Rock" && computerChoice == "2") {
         playerScore +=1;
         console.log(playerWins);
-    } else if (playerChoice == "Scissors" && computerScore == "Paper") {
+    } else if (playerChoice == "Scissors" && computerChoice== "0") {
+        playerScore = 0;
+        console.log(computerWins);
+    } else if (playerChoice == "Paper" && computerChoice == "2") {
+        playerScore = 0;
+        console.log(computerWins);
+    } else if (playerChoice == "Rock" && computerScore == "1") {
+        playerScore = 0;
+        console.log(computerWins);
+    } else if (playerChoice == "Paper" && computerScore == "0") {
+        playerScore +=1;
+        console.log(playerWins);
+    } else if (playerChoice == "Scissors" && computerScore == "1") {
         playerScore +=1;
         console.log(playerWins);
     } else if (playerChoice == computerScore); {
         playerScore +=1;
         console.log(YouTied);
-    }
+    }}
 
     let = computerScore(); {
 
-     if (playerChoice == "Rock" && computerChoice == "Scissors") {
+     if (playerChoice == "Rock" && computerChoice == "2") {
         computerScore =0;
         console.log(playerWins);
-    } else if (playerChoice == "Scissors" && computerScore == "Rock") {
+    } else if (playerChoice == "Scissors" && computerScore == "0") {
         computerScore +=1;
         console.log(computerWins);
-    } else if (playerChoice == "Paper" && computerScore == "Scissors") {
+    } else if (playerChoice == "Paper" && computerScore == "2") {
         computerScore +=1;
         console.log(computerWins);
-    } else if (playerChoice == "Rock" && computerScore == "Paper") {
+    } else if (playerChoice == "Rock" && computerScore == "1") {
         computerScore +=1;
         console.log(computerWins);
-    } else if (playerChoice == "Paper" && computerScore == "Rock") {
-        computerScore =0;
+    } else if (playerChoice == "Paper" && computerScore == "0") {
+        computerScore.innerText =0;
         console.log(playerWins);
-    } else if (playerChoice == "Scissors" && computerScore == "Paper") {
+    } else if (playerChoice == "Scissors" && computerScore == "1") {
         computerScore =0;
         console.log(computerWins);
     } else if (playerChoice == computerScore); {
@@ -118,15 +115,15 @@ function drawScore(){
     //let computerScore = getElementById("computer-score");
 
 if (playerScore >= 2 && computerScore >= 2) {
-    manScore.innerText = 1;
+    playerScore.innerText = 1;
     computerScore.innerText = 1;
   console.log('Tie');
 } else if (playerScore >= 2 && computerScore <= 1) {
-    manScore.innerText = 1;
+    playerScore.innerText = 1;
     computerScore.innerText = 0;
   console.log('manWins');
 } else if (playerScore <= 1 && computerScore >= 2) {
-    manScore.innerText = 0;
+    playerScore.innerText = 0;
     computerScore.innerText = 1;
   console.log('computerWins');
 } 

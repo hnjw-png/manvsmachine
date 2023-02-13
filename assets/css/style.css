@@ -53,24 +53,6 @@ header {
 
 /*hide images, only display when button is clicked*/
 
-
-.rock-click {
-    display: none;
-    text-align: center;
-    width: 20%;
-}
-
-.paper-click {
-    display: none;
-    text-align: center;
-    width: 20%;
-}
-
-.scissors-click {
-    display: none;
-    text-align: center;
-    width: 20%;
-}
 /*buttons*/
 
 #choices {
