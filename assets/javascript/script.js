@@ -1,10 +1,14 @@
 // const buttons = document.getElementsByClassName("buttons");
 const buttons = document.getElementsByClassName('buttons');
 console.log(buttons);
-let playerScore = document.getElementById("man-score");
-let computerScore = document.getElementById("computer-score");
-let playerImage = document.getElementById("man-image");
-let computerImage = document.getElementById("computer-image");
+var playerScore = document.getElementById("man-score");
+console.log(playerScore);
+var computerScore = document.getElementById("computer-score");
+console.log(computerScore); 
+var playerImage = document.getElementById("man-image");
+console.log(playerImage);
+var computerImage = document.getElementById("computer-image");
+console.log(computerImage);
 const choice = ["Rock", "Paper", "Scissors"];
 
 //game function for clicking the as a user//
@@ -19,47 +23,40 @@ for (let button of buttons) {
 //play the game, player choice and computers choice//
 function playGame(playerChoice) {
     console.log("Argument passed into playGame function: ", playerChoice)
+
     
-    if (buttons.textContent == "Rock") {
-        document.getElementById("rock-click").style.display ='block';
-        document.getElementById("paper-click").style.display ='none';
-        document.getElementById("scissors-click").style.display ='none';
+    if (playerChoice == 'Rock') {
+        playerImage.src = 'assets/images/rock.jpg';
         console.log("you clicked rock");
-    } else if (buttons.textContent == "Paper") {
-        document.getElementById("paper-click").style.display ='block';
-        document.getElementById("rock-click").style.display ='none';
-        document.getElementById("scissors-click").style.display ='none';
+    } else if (playerChoice == "Paper") {
+        playerImage.src = 'assets/images/paper.jpg';
         console.log("you clicked paper")
     } else if  (buttons.textContent == "Scissors") {
-        document.getElementById("scissors-click").style.display ='block';
-        document.getElementById("rock-click").style.display ='none';
-        document.getElementById("paper-click").style.display ='none';
+        playerImage.src = 'assets/images/paper.jpg';
         console.log("you clicked scissors");
     }}
 
-
-    function clickEvent(computerScore); {
 
     let computerChoice = Math.floor(Math.random()*3);
     
 
     {
-        if(computerChoice == "rock") {
+        if(choice == "0") {
             document.getElementById("rock-click").style.display ='block';
         document.getElementById("paper-click").style.display ='none';
         document.getElementById("scissors-click").style.display ='none';
-        } else if(computerChoice == "paper") {
+        } else if(computerChoice == "1") {
             document.getElementById("paper-click").style.display ='block';
         document.getElementById("rock-click").style.display ='none';
         document.getElementById("scissors-click").style.display ='none';
-        } else if(computerChoice == "scissors") {
+        } else if(computerChoice == "2") {
             document.getElementById("scissors-click").style.display ='block';
         document.getElementById("rock-click").style.display ='none';
         document.getElementById("paper-click").style.display ='none';
         console.log("you clicked scissors");
     }
 
-    }}
+    }
 
 //points decider//
 function incrementScore(manScore) {
@@ -150,7 +147,7 @@ if (playerScore >= 2 && computerScore >= 2) {
 
 }
 
-function roundsPlayed();{
+function roundsPlayed() {
 for (let i = 0; i < 3; i++) {
     endGame();
 }
