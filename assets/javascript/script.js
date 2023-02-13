@@ -37,7 +37,7 @@ incrementScore();
 //declaration for after 3 rounds, endgame and draw the score.
 
 for (let i = 0; i < 3; i++); {
-    
+
     drawScore();
 }
 
@@ -78,16 +78,16 @@ function playGame(playerChoice) {
 function incrementScore() {
 
     if (playerScore == "Rock" && computerChoice == "2") {
-        playerScore += 1;
+        document.getElementById(playerScore) += 1;
         console.log(playerWins);
     } else if (playerScore == "Scissors" && computerScore == "0") {
-        playerScore = 0;
+        computerScore += 1;
         console.log(computerWins);
     } else if (playerScore == "Paper" && computerScore == "2") {
-        playerScore = 0;
+        computerScore += 1;
         console.log(computerWins);
     } else if (playerScore == "Rock" && computerScore == "1") {
-        playerScore = 0;
+        computerScore += 1;
         console.log(computerWins);
     } else if (playerScore == "Paper" && computerScore == "0") {
         playerScore += 1;
@@ -97,6 +97,7 @@ function incrementScore() {
         console.log(playerWins);
     } else if (playerScore == computerScore); {
         playerScore += 1;
+        computerScore +=1;
     }
 }
 
@@ -104,17 +105,18 @@ function incrementScore() {
 function drawScore() {
 
     if (playerScore >= 2 && computerScore >= 2) {
-        playerScore.innerText = "Its a tie";
-        computerScore.innerText = "its a tie";
+        document.getElementById(playerScore).innerHTML = "Its a tie";
+        document.getElementById(computerScore).innerHTML = "its a tie";
         
     } else if (playerScore >= 2 && computerScore <= 1) {
-        playerScore.innerText = "Winner";
-        computerScore.innerText = "Loser";
+        document.getElementById(playerScore).innerHTML = "Winner";
+        document.getElementById(computerScore).innerHTML = "Loser";
         
     } else if (playerScore <= 1 && computerScore >= 2) {
-        playerScore.innerText = "Loser";
-        computerScore.innerText = "Winner";
+        document.getElementById(playerScore).innerHTML = "Loser";
+        document.getElementById(computerScore).innerHTML = "Winner";
         
 
 }}
 
+//last function restart game (with button or automatic refresh after 3 rounds)
