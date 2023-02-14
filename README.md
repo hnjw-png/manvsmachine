@@ -6,9 +6,9 @@ Welcome RPS,
 
 Is to have a interactive game, which plays rpunds of three and calculates the score based on the rules of rock paper scissors. It will consist of three buttons, one for rock, paper and scissors, when pressed by the user they will perform a action, the action is that when the button is clicked; it will generate a picture of rock paper or scissors depending on what the user chose. Simaltanueosly the computer will also choose a random response back. Depending on the computers desicion, will determined who won. The rounds are best of three.
 
-##User Experience/User Interface (UX/UI)
+## User Experience/User Interface (UX/UI)
 
-First Time user goals:
+# First Time user goals:
 
 When the visitor first visits the game:
 
@@ -17,15 +17,15 @@ When the visitor first visits the game:
 “*” The game should work properly, upon user interaction.
 “*” The game should look good and function on all devices.
 
-Freuquent Visitor goals:
+# Freuquent Visitor goals:
 
 “*” To be able to play the game on any devices.
 “*” If a round has not been completed you can resume where you left of, unless you have refreshed the page.
 “*” The computers choice will always be random, no matter how many times played. 
 
-Website owner goals:
+# Website owner goals:
 
-“*”The game should be able to keep score between the player and the computer, and calculate a winner.
+“*” The game should be able to keep score between the player and the computer, and calculate a winner.
 “*” To provide a fun and inticing game, with simplicity.
 “*” To give people a experience of playing a game, for one person.
 “*” The game is designed so it would be easy to visit the game again, as everytime you click Rock, Paper or Scissors, you get a automatic comeback from the computer.
@@ -40,7 +40,7 @@ picure of color
 picturee of color
 pricture of color
 
-Typography
+# Typography
 
 I choose the font '' this font has a nice clear look, which is a little bit like clear fancy handwriting, this stands out well and fits the style of the game.
 
@@ -52,34 +52,34 @@ I this time drawn all my designs by hand, the next time I use wireframes. I see 
 
 ## Features
 
-#Responsiveness:
+# Responsiveness:
 
 This website fits to size on all types of devices. From laptop to mobile phone.
 
-#Features:
+## Features:
 
-Game Buttons:
+# Game Buttons:
 
 There are three game buttons, that upon being pressed give a score and result. There are clearly lined up at the top center of the page.
 Abve you can see, the name of the game is very clear, as clearly written above the buttons, is 'are you ready to play rock, paper, scissors?'
 
-Instructions:
+# Instructions:
 
 There is a page/document attached to the website stating how to play the game and the rules of the game, etc how many rounds you play until winner is decided, and which rock, paper or scissors beats who.
 
-Main Game page:
+# Main Game page:
 
 The main page is a simply page with a clear purpose, to play rock paper scissors. You can see clearly where to click, and where your score should appear. The only option currently is to play computer againist human, but not yet human to human.
 
-The RPS images:
+# The RPS images:
 
 The start image for both player and user is a png of rock, paper and scissors image, this image source changes to rock, paper or a scissors jpg, depending on the desicion made.
 
-The Score counters:
+# The Score counters:
 
 The score counter is alongside the 'man' and 'computer' headings, there your score will update with the correct score up to 3. The first who gets 2 points win, as its a best of three game. Thereafter the winner will be declared, with the words in the title. 'Winner or Loser'.
 
-Start again button:
+# Start again button:
 
 This button under the game, for if you want to restart the game before its ends without refreshing it,  or starting another round.
 
