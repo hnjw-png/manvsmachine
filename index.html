@@ -24,7 +24,7 @@
     
 
     <!--the game area holding the choosen image, that change to what button is clicked (rock, paper or scissors)./*-->
-       <section>
+       <section = "gamearea">
         <div id = "player"><h2>Man:<span id = "man-score">0</span></h2></div>
     <img src = "/assets/images/rps.png" alt = "rock, paper, scissors" id = "man-image" >
 
@@ -35,9 +35,23 @@
 
 </section>
 
+<div id = "instructions">
+<h2>Hello Fellow rock paper scissors fans, this game is a simple game.</h2>
+    <ul ><li>
+        Click Rock, Paper or Scissors!</li>
+    <li>
+        See what computer chooses.
+    </li>
+<li>
+    The game is is based on three rounds, the first to 2 points wins.
+</li>
+<li>
+    Restart game after 3 rounds, and start a fresh.
+</li></ul>
+</div>
     <!--a footer with a link to the facebook, the intention is a that you can like the games social media-->
 
-    <footer>Did you like the game like us on Facebook!<li><a href="https://www.facebook.com/" rel="reopener" target="_blank">Facebook!</a></li>
+    <footer>Did you like the game like us on Facebook!<li = "facebook"><a href="https://www.facebook.com/" rel="reopener" target="_blank">Facebook!</a></li>
     </footer>
     <script src = "assets/javascript/script.js" defer></script>
 </body>
