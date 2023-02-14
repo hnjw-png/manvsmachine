@@ -6,74 +6,113 @@ Welcome RPS,
 
 Is to have a interactive game, which plays rpunds of three and calculates the score based on the rules of rock paper scissors. It will consist of three buttons, one for rock, paper and scissors, when pressed by the user they will perform a action, the action is that when the button is clicked; it will generate a picture of rock paper or scissors depending on what the user chose. Simaltanueosly the computer will also choose a random response back. Depending on the computers desicion, will determined who won. The rounds are best of three.
 
-## Header
+##User Experience/User Interface (UX/UI)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+First Time user goals:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+When the visitor first visits the game:
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+“*” The rules and what the game is, is obvious.
+“*” The games color coordination and layout, makes the game attracive from the first load, its clear to read and the color are easy colors for the eyes.
+“*” The game should work properly, upon user interaction.
+“*” The game should look good and function on all devices.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+Freuquent Visitor goals:
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+“*” To be able to play the game on any devices.
+“*” If a round has not been completed you can resume where you left of, unless you have refreshed the page.
+“*” The computers choice will always be random, no matter how many times played. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Website owner goals:
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+“*”The game should be able to keep score between the player and the computer, and calculate a winner.
+“*” To provide a fun and inticing game, with simplicity.
+“*” To give people a experience of playing a game, for one person.
+“*” The game is designed so it would be easy to visit the game again, as everytime you click Rock, Paper or Scissors, you get a automatic comeback from the computer.
+“*” To encourage continued playing of the game.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Color Scheme
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+I firstly tried some different color combinations. In the end I decided the most visually pleasing and practical was the colors blue, white and black. The Website header and the game title are in blue, as well as the footer. While the player score and computer score titles are black, this is to differiniate from the title, this I tried and saw it looked to close, so black is the better option. The buttons are with a white background and a blue text, with a black outline, they corilate with the rest of the site, but still stand out. The background is white, this words nicely with the blue.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+picure of color
+picturee of color
+pricture of color
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Typography
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+I choose the font '' this font has a nice clear look, which is a little bit like clear fancy handwriting, this stands out well and fits the style of the game.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+typograhy here
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Wireframes.
 
-------
+I this time drawn all my designs by hand, the next time I use wireframes. I see this is way more practical and less time consuming.
 
-## Main game
+## Features
 
-**Why have you added this script?**
+#Responsiveness:
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+This website fits to size on all types of devices. From laptop to mobile phone.
 
-**How will this affect me?**
+#Features:
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+Game Buttons:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+There are three game buttons, that upon being pressed give a score and result. There are clearly lined up at the top center of the page.
+Abve you can see, the name of the game is very clear, as clearly written above the buttons, is 'are you ready to play rock, paper, scissors?'
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+Instructions:
 
-**So….?**
+There is a page/document attached to the website stating how to play the game and the rules of the game, etc how many rounds you play until winner is decided, and which rock, paper or scissors beats who.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+Main Game page:
 
-**Can I opt out?**
+The main page is a simply page with a clear purpose, to play rock paper scissors. You can see clearly where to click, and where your score should appear. The only option currently is to play computer againist human, but not yet human to human.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+The RPS images:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+The start image for both player and user is a png of rock, paper and scissors image, this image source changes to rock, paper or a scissors jpg, depending on the desicion made.
 
-**Anything more?**
+The Score counters:
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+The score counter is alongside the 'man' and 'computer' headings, there your score will update with the correct score up to 3. The first who gets 2 points win, as its a best of three game. Thereafter the winner will be declared, with the words in the title. 'Winner or Loser'.
 
----
+Start again button:
+
+This button under the game, for if you want to restart the game before its ends without refreshing it,  or starting another round.
+
+Footer:
+
+The footer is a simple statement of 'do you like the game, follow us on facebook!', and next to it, is a button that links you to facebook. This is a good way in future to measure how success ful the game is.
+
+
+#Possible Future Features:
+
+“*”A highscore calculator
+“*” The function to play human to human
+“*” A more interactive start page, that appears before you begin the game
+“*” Music in background
+
+#Techologies used
+
+Languages used:
+
+“*”HTML
+“*”CSS
+“*”JAVASCRIPT
+
+#Applications used:
+
+“*”Google Fonts fonts downloaded from Google Fonts.
+“*”Fontawesome icons downloaded from Font Awesome.com.
+“*”GitHub to store the projects code.
+“*”Gitpages to deploy the site.
+“*”Chrome Developer Tools for layout and responsive testing.
+“*”favICO.com for creating favicon.
+“*”W3 Validator to test html and css code.
+“*”Jshint to validate Javascript code.
 
 Happy coding!
 
