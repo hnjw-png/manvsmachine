@@ -112,12 +112,12 @@ The footer is a simple statement of 'do you like the game, follow us on facebook
 
 
 
-#Possible Future Features:
+# Possible Future Features:
 
-“*”A highscore calculator
-“*” The function to play human to human
-“*” A more interactive start page, that appears before you begin the game
-“*” Music in background
+* A highscore calculator
+* The function to play human to human
+* A more interactive start page, that appears before you begin the game
+* Music in background
 
 #Techologies used
 
@@ -127,7 +127,7 @@ Languages used:
 * CSS
 * JAVASCRIPT
 
-#Applications used:
+# Applications used:
 
 * Google Fonts fonts downloaded from Google Fonts.
 * Fontawesome icons downloaded from Font Awesome.com.
@@ -147,4 +147,27 @@ Scissors icon:
 https://icon-library.com/icon/rock-paper-scissors-icon-22.html
 Rock icon:
 https://icon-library.com/icon/rock-paper-scissors-icon-24.html
+
+## Testing
+
+# Lighthouse: 
+![image](https://user-images.githubusercontent.com/120515252/219084828-cab102c6-eb4e-4f3f-a4a3-d0e844d08123.png)
+
+# CSS and HTML Validator:
+
+![image](https://user-images.githubusercontent.com/120515252/219085156-caaa67b3-5bd7-4062-bd23-4d424252e150.png) 
+
+![image](https://user-images.githubusercontent.com/120515252/219085317-b1cefe13-88a2-483f-9697-9027d76dddce.png)
+
+
+## Bug fixes
+
+* Does game work on all devices: Yes!
+
+* Are instructions clear to the user: Yes, I tested this myself and also tested it with a friend.
+
+* Is the games purpose obvious? Yes! It is veru obvious where to click and where your score results will appear.
+
+* 
+
 
