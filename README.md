@@ -56,7 +56,7 @@ I this time drawn all my designs by hand, the next time I use wireframes. I see 
 
 This website fits to size on all types of devices. From laptop to mobile phone.
 
-![image](https://user-images.githubusercontent.com/120515252/219071654-f5dd555e-d046-4c1e-8a9e-420283be72e3.png)
+![image](https://user-images.githubusercontent.com/120515252/219078949-cc83aa44-c420-4c1b-ac4b-d91b6b79d07a.png)
 
 ## Features:
 
