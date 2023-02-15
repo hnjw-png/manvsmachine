@@ -12,33 +12,33 @@ Is to have a interactive game, which plays rpunds of three and calculates the sc
 
 When the visitor first visits the game:
 
-“*” The rules and what the game is, is obvious.
-“*” The games color coordination and layout, makes the game attracive from the first load, its clear to read and the color are easy colors for the eyes.
-“*” The game should work properly, upon user interaction.
-“*” The game should look good and function on all devices.
+* The rules and what the game is, is obvious.
+* The games color coordination and layout, makes the game attracive from the first load, its clear to read and the color are easy colors for the eyes.
+* The game should work properly, upon user interaction.
+* The game should look good and function on all devices.
 
 # Frequent Visitor goals:
 
-“*” To be able to play the game on any devices.
-“*” If a round has not been completed you can resume where you left of, unless you have refreshed the page.
-“*” The computers choice will always be random, no matter how many times played. 
+* To be able to play the game on any devices.
+* If a round has not been completed you can resume where you left of, unless you have refreshed the page.
+* The computers choice will always be random, no matter how many times played. 
 
 # Website owner goals:
 
-“*” The game should be able to keep score between the player and the computer, and calculate a winner.
-“*” To provide a fun and inticing game, with simplicity.
-“*” To give people a experience of playing a game, for one person.
-“*” The game is designed so it would be easy to visit the game again, as everytime you click Rock, Paper or Scissors, you get a automatic comeback from the computer.
-“*” To encourage continued playing of the game.
+* The game should be able to keep score between the player and the computer, and calculate a winner.
+* To provide a fun and inticing game, with simplicity.
+* To give people a experience of playing a game, for one person.
+* The game is designed so it would be easy to visit the game again, as everytime you click Rock, Paper or Scissors, you get a automatic comeback from the computer.
+* To encourage continued playing of the game.
 
 
 ## Color Scheme
 
 I firstly tried some different color combinations. In the end I decided the most visually pleasing and practical was the colors blue, white and black. The Website header and the game title are in blue, as well as the footer. While the player score and computer score titles are black, this is to differiniate from the title, this I tried and saw it looked to close, so black is the better option. The buttons are with a white background and a blue text, with a black outline, they corilate with the rest of the site, but still stand out. The background is white, this words nicely with the blue.
 
-picture of color: 
-picture of color
-pricture of color
+* picture of color: 
+* picture of color
+* picture of color
 
 # Typography
 
@@ -46,7 +46,7 @@ I choose the font '' this font has a nice clear look, which is a little bit like
 
 typograhy here
 
-Wireframes.
+# Wireframes
 
 I this time drawn all my designs by hand, the next time I use wireframes. I see this is way more practical and less time consuming.
 
@@ -123,20 +123,20 @@ The footer is a simple statement of 'do you like the game, follow us on facebook
 
 Languages used:
 
-“*”HTML
-“*”CSS
-“*”JAVASCRIPT
+* HTML
+* CSS
+* JAVASCRIPT
 
 #Applications used:
 
-“*” Google Fonts fonts downloaded from Google Fonts.
-“*” Fontawesome icons downloaded from Font Awesome.com.
-“*” GitHub to store the projects code.
-“*” Gitpages to deploy the site.
-“*” Chrome Developer Tools for layout and responsive testing.
-“*” favICO.com for creating favicon.
-“*” W3 Validator to test html and css code.
-“*” Jshint to validate Javascript code.
+* Google Fonts fonts downloaded from Google Fonts.
+* Fontawesome icons downloaded from Font Awesome.com.
+* GitHub to store the projects code.
+* Gitpages to deploy the site.
+* Chrome Developer Tools for layout and responsive testing.
+* favICO.com for creating favicon.
+* W3 Validator to test html and css code.
+* Jshint to validate Javascript code.
 
 ## Sources
 Rock paper scissors start image:
