@@ -89,7 +89,7 @@ The main page is a simply page with a clear purpose, to play rock paper scissors
 
 The start image for both player and user is a png of rock, paper and scissors image, this image source changes to rock, paper or a scissors jpg, depending on the desicion made.
 
-![image](https://user-images.githubusercontent.com/120515252/219072673-4fa8ba7d-2926-4d36-9221-6c16ba47c61b.png)
+![image](https://user-images.githubusercontent.com/120515252/219079363-fb94cc88-9743-4f93-892f-fd5bae860ba6.png) ![image](https://user-images.githubusercontent.com/120515252/219072673-4fa8ba7d-2926-4d36-9221-6c16ba47c61b.png)
 
 
 # The Score counters:
