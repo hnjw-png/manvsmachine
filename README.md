@@ -129,16 +129,22 @@ Languages used:
 
 #Applications used:
 
-“*”Google Fonts fonts downloaded from Google Fonts.
-“*”Fontawesome icons downloaded from Font Awesome.com.
-“*”GitHub to store the projects code.
-“*”Gitpages to deploy the site.
-“*”Chrome Developer Tools for layout and responsive testing.
-“*”favICO.com for creating favicon.
-“*”W3 Validator to test html and css code.
-“*”Jshint to validate Javascript code.
+“*” Google Fonts fonts downloaded from Google Fonts.
+“*” Fontawesome icons downloaded from Font Awesome.com.
+“*” GitHub to store the projects code.
+“*” Gitpages to deploy the site.
+“*” Chrome Developer Tools for layout and responsive testing.
+“*” favICO.com for creating favicon.
+“*” W3 Validator to test html and css code.
+“*” Jshint to validate Javascript code.
 
-Happy coding!
-
-dont delete me
+## Sources
+Rock paper scissors start image:
 https://www.flaticon.com/free-icon/rock-paper-scissors_6832100
+Paper Icon: 
+https://icon-library.com/icon/rock-paper-scissors-icon-23.html
+Scissors icon:
+https://icon-library.com/icon/rock-paper-scissors-icon-22.html
+Rock icon:
+https://icon-library.com/icon/rock-paper-scissors-icon-24.html
+
