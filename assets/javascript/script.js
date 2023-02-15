@@ -79,22 +79,22 @@ function incrementScore() {
 
     if (playerScore == "Rock" && computerChoice == "2") {
         document.getElementById(playerScore) += 1;
-        console.log(playerWins);
+        
     } else if (playerScore == "Scissors" && computerScore == "0") {
         computerScore += 1;
-        console.log(computerWins);
+        
     } else if (playerScore == "Paper" && computerScore == "2") {
         computerScore += 1;
-        console.log(computerWins);
+        
     } else if (playerScore == "Rock" && computerScore == "1") {
         computerScore += 1;
-        console.log(computerWins);
+        
     } else if (playerScore == "Paper" && computerScore == "0") {
         playerScore += 1;
-        console.log(playerWins);
+        
     } else if (playerScore == "Scissors" && computerScore == "1") {
         playerScore += 1;
-        console.log(playerWins);
+        
     } else if (playerScore == computerScore); {
         playerScore += 1;
         computerScore +=1;
