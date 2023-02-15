@@ -100,3 +100,11 @@ footer {
 }
 
 
+/*media query for ipads, as this is the only screen size the footer floats up on.*/
+
+@media screen and (max-width: 800px) {
+
+    footer {
+        margin-top: 200px;
+    }
+}

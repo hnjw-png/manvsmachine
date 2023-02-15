@@ -1,14 +1,13 @@
-// const buttons = document.getElementsByClassName("buttons");
 const buttons = document.getElementsByClassName('buttons');
-console.log(buttons);
-let playerScore = document.getElementById("man-score");
-console.log(playerScore);
-let computerScore = document.getElementById("computer-score");
-console.log(computerScore);
+
+var playerScore = document.getElementById("man-score");
+
+var computerScore = document.getElementById("computer-score");
+
 var playerImage = document.getElementById("man-image");
-console.log(playerImage);
+
 var computerImage = document.getElementById("computer-image");
-console.log(computerImage);
+
 const choice = ["Rock", "Paper", "Scissors"];
 
 
@@ -24,13 +23,10 @@ for (let button of buttons) {
 }
 
 //declaration for increment score//
-let score = 0;
-if (playerScore > 2) {
-    score += 1;
-    document.getElementById("man-score").innerHTML = score;
-} else {
-    score = 0;
-    document.getElementById("man-score").innerHTML = score;
+let playerNumber = 0;
+let computerNumber = 0;
+ {
+while (playerNumber != 3 && computerNumber !=3);
 }
 incrementScore();
 
@@ -44,7 +40,6 @@ for (let i = 0; i < 3; i++); {
 
 //play the game, player choice and computers choice//
 function playGame(playerChoice) {
-    console.log("Argument passed into playGame function: ", playerChoice)
 
 
     if (playerChoice == 'Rock') {
@@ -77,8 +72,8 @@ function playGame(playerChoice) {
 //points decider//
 function incrementScore() {
 
-    if (playerScore == "Rock" && computerChoice == "2") {
-        document.getElementById(playerScore) += 1;
+    if (playerScore == "Rock" && computerScore == "2") {
+        playerScore += 1;
         
     } else if (playerScore == "Scissors" && computerScore == "0") {
         computerScore += 1;
