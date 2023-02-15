@@ -24,18 +24,18 @@ for (let button of buttons) {
 
 //declaration for increment score//
 let playerNumber = 0;
-let computerNumber = 0;
- {
-while (playerNumber != 3 && computerNumber !=3);
-}
-runGame(incrementScore);
+let computerNumber = 0; {
+    while (playerNumber != 3 && computerNumber != 3);
+
+    runGame(incrementScore);
+};
 
 //declaration for after 3 rounds, endgame and draw the score.
 
 for (let i = 0; i < 3; i++); {
 
-    drawScore();
-}
+    runGame(drawScore);
+};
 
 
 //play the game, player choice and computers choice//
@@ -74,22 +74,22 @@ function incrementScore() {
 
     if (playerScore == "Rock" && computerScore == "2") {
         playerScore = score + 1;
-        
+
     } else if (playerScore == "Scissors" && computerScore == "0") {
         computerScore = score + 1;
-        
+
     } else if (playerScore == "Paper" && computerScore == "2") {
         computerScore = score + 1;
-        
+
     } else if (playerScore == "Rock" && computerScore == "1") {
         computerScore = +1;
-        
+
     } else if (playerScore == "Paper" && computerScore == "0") {
         playerScore = score + 1;
-        
+
     } else if (playerScore == "Scissors" && computerScore == "1") {
         playerScore = score + 1;
-        
+
     } else if (playerScore == computerScore); {
         playerScore = score + 1;
         computerScore = score + 1;
@@ -102,15 +102,16 @@ function drawScore() {
     if (playerScore >= 2 && computerScore >= 2) {
         document.getElementById(playerScore).innerHTML = "Its a tie";
         document.getElementById(computerScore).innerHTML = "its a tie";
-        
-    } else if (playerScore >= 2 && computerScore <= 1) {
-        parseInt(document. getElementById("playerScore"). innerHTML) = "Winner";
-        parseInt(document. getElementById("computerScore"). innerHTML) = "Loser";
-        
-    } else if (playerScore <= 1 && computerScore >= 2) {
-        parseInt(document. getElementById("playerScore"). innerHTML) = "Loser";
-        parseInt(document. getElementById("computerScore"). innerHTML) = "Winner";
 
-}}
+    } else if (playerScore >= 2 && computerScore <= 1) {
+        parseInt(document.getElementById("playerScore").innerHTML) = "Winner";
+        parseInt(document.getElementById("computerScore").innerHTML) = "Loser";
+
+    } else if (playerScore <= 1 && computerScore >= 2) {
+        parseInt(document.getElementById("playerScore").innerHTML) = "Loser";
+        parseInt(document.getElementById("computerScore").innerHTML) = "Winner";
+
+    }
+}
 
 //last function restart game (with button or automatic refresh after 3 rounds)
