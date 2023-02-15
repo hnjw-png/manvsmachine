@@ -17,7 +17,7 @@ When the visitor first visits the game:
 “*” The game should work properly, upon user interaction.
 “*” The game should look good and function on all devices.
 
-# Freuquent Visitor goals:
+# Frequent Visitor goals:
 
 “*” To be able to play the game on any devices.
 “*” If a round has not been completed you can resume where you left of, unless you have refreshed the page.
@@ -36,8 +36,8 @@ When the visitor first visits the game:
 
 I firstly tried some different color combinations. In the end I decided the most visually pleasing and practical was the colors blue, white and black. The Website header and the game title are in blue, as well as the footer. While the player score and computer score titles are black, this is to differiniate from the title, this I tried and saw it looked to close, so black is the better option. The buttons are with a white background and a blue text, with a black outline, they corilate with the rest of the site, but still stand out. The background is white, this words nicely with the blue.
 
-picure of color
-picturee of color
+picture of color: 
+picture of color
 pricture of color
 
 # Typography
