@@ -168,6 +168,8 @@ https://icon-library.com/icon/rock-paper-scissors-icon-24.html
 
 * Is the games purpose obvious? Yes! It is veru obvious where to click and where your score results will appear.
 
-* 
+* Does the computer play the game automaticall after a player choice? Yes! 
+
+
 
 
