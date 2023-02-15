@@ -28,7 +28,7 @@ let computerNumber = 0;
  {
 while (playerNumber != 3 && computerNumber !=3);
 }
-incrementScore();
+runGame(incrementScore);
 
 //declaration for after 3 rounds, endgame and draw the score.
 
@@ -73,26 +73,26 @@ function playGame(playerChoice) {
 function incrementScore() {
 
     if (playerScore == "Rock" && computerScore == "2") {
-        playerScore += 1;
+        playerScore = score + 1;
         
     } else if (playerScore == "Scissors" && computerScore == "0") {
-        computerScore += 1;
+        computerScore = score + 1;
         
     } else if (playerScore == "Paper" && computerScore == "2") {
-        computerScore += 1;
+        computerScore = score + 1;
         
     } else if (playerScore == "Rock" && computerScore == "1") {
-        computerScore += 1;
+        computerScore = +1;
         
     } else if (playerScore == "Paper" && computerScore == "0") {
-        playerScore += 1;
+        playerScore = score + 1;
         
     } else if (playerScore == "Scissors" && computerScore == "1") {
-        playerScore += 1;
+        playerScore = score + 1;
         
     } else if (playerScore == computerScore); {
-        playerScore += 1;
-        computerScore +=1;
+        playerScore = score + 1;
+        computerScore = score + 1;
     }
 }
 
@@ -104,13 +104,12 @@ function drawScore() {
         document.getElementById(computerScore).innerHTML = "its a tie";
         
     } else if (playerScore >= 2 && computerScore <= 1) {
-        document.getElementById(playerScore).innerHTML = "Winner";
-        document.getElementById(computerScore).innerHTML = "Loser";
+        parseInt(document. getElementById("playerScore"). innerHTML) = "Winner";
+        parseInt(document. getElementById("computerScore"). innerHTML) = "Loser";
         
     } else if (playerScore <= 1 && computerScore >= 2) {
-        document.getElementById(playerScore).innerHTML = "Loser";
-        document.getElementById(computerScore).innerHTML = "Winner";
-        
+        parseInt(document. getElementById("playerScore"). innerHTML) = "Loser";
+        parseInt(document. getElementById("computerScore"). innerHTML) = "Winner";
 
 }}
 
