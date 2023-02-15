@@ -65,21 +65,40 @@ This website fits to size on all types of devices. From laptop to mobile phone.
 There are three game buttons, that upon being pressed give a score and result. There are clearly lined up at the top center of the page.
 Abve you can see, the name of the game is very clear, as clearly written above the buttons, is 'are you ready to play rock, paper, scissors?'
 
+![image](https://user-images.githubusercontent.com/120515252/219072097-97eb9688-9b49-41e6-8133-f03494f5ca14.png)
+
+
+![image](https://user-images.githubusercontent.com/120515252/219072206-db1685ed-3746-4a59-8e9b-8d498cef92c6.png)
+
+
 # Instructions:
 
 There is a page/document attached to the website stating how to play the game and the rules of the game, etc how many rounds you play until winner is decided, and which rock, paper or scissors beats who.
+
+![image](https://user-images.githubusercontent.com/120515252/219072320-38cfcc72-127d-452e-b57c-4785455e49fb.png)
+
 
 # Main Game page:
 
 The main page is a simply page with a clear purpose, to play rock paper scissors. You can see clearly where to click, and where your score should appear. The only option currently is to play computer againist human, but not yet human to human.
 
+![image](https://user-images.githubusercontent.com/120515252/219072581-3c6edf83-1b36-4e79-ae06-371a0dbe793b.png)
+
+
 # The RPS images:
 
 The start image for both player and user is a png of rock, paper and scissors image, this image source changes to rock, paper or a scissors jpg, depending on the desicion made.
 
+![image](https://user-images.githubusercontent.com/120515252/219072673-4fa8ba7d-2926-4d36-9221-6c16ba47c61b.png)
+
+
 # The Score counters:
 
 The score counter is alongside the 'man' and 'computer' headings, there your score will update with the correct score up to 3. The first who gets 2 points win, as its a best of three game. Thereafter the winner will be declared, with the words in the title. 'Winner or Loser'.
+![image](https://user-images.githubusercontent.com/120515252/219072800-f31fe5b9-55ef-4391-a00f-c58b2fa1e035.png)
+
+![image](https://user-images.githubusercontent.com/120515252/219072893-54ba23f0-d417-49ae-bbd5-862844975fb9.png)
+
 
 # Start again button:
 
@@ -88,6 +107,9 @@ This button under the game, for if you want to restart the game before its ends 
 Footer:
 
 The footer is a simple statement of 'do you like the game, follow us on facebook!', and next to it, is a button that links you to facebook. This is a good way in future to measure how success ful the game is.
+
+![image](https://user-images.githubusercontent.com/120515252/219073052-9218ea09-527c-410d-b043-86fd86ef350b.png)
+
 
 
 #Possible Future Features:
