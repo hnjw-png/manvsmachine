@@ -168,25 +168,21 @@ There were some errors in the jshint, these were about how the incrementScore va
 
 # Bug fixes
 
-* Does game work on all devices: Yes!
+* Does game work on all devices: Yes! I added a media query to ipad sized devices, the other screens worked perfectly without.
 
-* Are instructions clear to the user: Yes, I tested this myself and also tested it with a friend.
+* Are instructions clear to the user: Yes! I tested this myself and also tested it with a friend.
 
-* Is the games purpose obvious? Yes! It is veru obvious where to click and where your score results will appear.
+* Is the games purpose obvious? Yes! It is very obvious where to click and where your score results will appear. The color scheme and font sizing work well on all devices.
 
-* Does the computer play the game automatically after a player choice? Yes! 
+* Does the computer play the game automatically after a player choice? Yes! The players clicks a option and the computer automatically picks one at random.
 
-* Does the image change, when the appripriote button is clicked? Yes!
+* Does the image change, when the appripriate button is clicked? Yes! Yes if you click rock, the rock image appears, and the same goes for paper and scissors.
 
-* Does the computer take its own choice directly after the human? Yes!
-
-* Is the computers choice random? Yes!
-
-* Does the score appear on the manscore and computer score sections? No! ... It should be appearing when the player or the computer win, or lose. I have been troubleshooting this for some days, as I see that the function isnt being translated to the site. I have tried writing various codes to call the function. So I am still working on this, as now I see the draw function was on its own loop, i see it need to combine the increment function with another.
+* Does the score appear on the manscore and computer score sections? No! ... It should be appearing when the player or the computer win, or lose. I have been troubleshooting this for some days, as I see that the function isn't being translated to the game. I have tried writing various codes to call the function. So I am still working on this, as now I see the draw function was on its own loop. I believe a gameover function and rounds played function could have been a good addition to the game code. In future I plan to fix these bugs and increment the score according to the rock, paper, scissors game parimeters. Then I would like the winner to be drawn out of three rounds, and pop up text showing stating the winner, loser or a tie. Then the game to restart.
 
 * Does the game calculate rounds? No, it does not function creating rounds, I have tried several different code combinations, but I need to experience javascript to fix these bugs. I am working on calling variables, and not making the mistake of creating a endless loop.
 
-* The game functions visually, but not pracitcally, the game clearly interacts well with the user as when a button is clicked, the computer automatically makes its choice. But thereafter there is no functionality on the score counter.
+* The game functions visually, but not practically, the game clearly interacts well with the user as when a button is clicked, the computer automatically makes its choice. But thereafter there is no functionality on the score counter. In the future, I will go back, and fix the game so the user experience is 100%, that the player knows how many points he/she has and they can then know who is the winner. Then the full experience of the game will be executed.
 
 # Deployment:
 
