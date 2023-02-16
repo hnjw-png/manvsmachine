@@ -4,7 +4,7 @@ Welcome RPS,
 
 ## Purpose of the game
 
-Is to have a interactive game, which plays rpunds of three and calculates the score based on the rules of rock paper scissors. It will consist of three buttons, one for rock, paper and scissors, when pressed by the user they will perform a action, the action is that when the button is clicked; it will generate a picture of rock paper or scissors depending on what the user chose. Simaltanueosly the computer will also choose a random response back. Depending on the computers desicion, will determined who won. The rounds are best of three.
+Is to have a interactive game, which plays rounds of three and calculates the score based on the rules of rock paper scissors. It will consist of three buttons, one for rock, paper and scissors, when pressed by the user, they will perform a action, the action is that when the button is clicked; it will generate a picture of rock paper or scissors depending on what the user chose. Simaltanueosly the computer will also choose a random response back. Depending on the computers desicion, will determined who won. The rounds are best of three.
 
 ## User Experience/User Interface (UX/UI)
 
@@ -32,17 +32,18 @@ When the visitor first visits the game:
 * To encourage continued playing of the game.
 
 
-## Color Scheme
+# Color Scheme
 
 I firstly tried some different color combinations. In the end I decided the most visually pleasing and practical was the colors blue, white and black. The Website header and the game title are in blue, as well as the footer. While the player score and computer score titles are black, this is to differiniate from the title, this I tried and saw it looked to close, so black is the better option. The buttons are with a white background and a blue text, with a black outline, they corilate with the rest of the site, but still stand out. The background is white, this words nicely with the blue.
 
-* picture of color: 
-* picture of color
-* picture of color
+* picture of blue: ![image](https://user-images.githubusercontent.com/120515252/219411536-16e440d8-5710-4dcb-b3e4-bf082558411f.png)
+
+* normal shade of white
+* basic shade of black
 
 # Typography
 
-I choose the font '' this font has a nice clear look, which is a little bit like clear fancy handwriting, this stands out well and fits the style of the game.
+I choose the font 'Lobster' this font has a nice clear look, which is a little bit like clear fancy handwriting, this stands out well and fits the style of the game.
 
 typograhy here
 
