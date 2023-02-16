@@ -190,6 +190,7 @@ There were some errors in the jshint, these were about how the incrementScore va
 
 # Deployment:
 
+I deployed my site through github pages, I this by going to settings, then to github pages, then to deploy.
 
 
 
