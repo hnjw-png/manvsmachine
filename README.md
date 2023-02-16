@@ -157,7 +157,12 @@ https://icon-library.com/icon/rock-paper-scissors-icon-24.html
 ![image](https://user-images.githubusercontent.com/120515252/219085317-b1cefe13-88a2-483f-9697-9027d76dddce.png)
 
 
-## Bug fixes
+# JSHINT
+
+There were some errors in the jshint, these were about how the incrementScore variable, drascore variable. I know I should call them, but eveyrtime I do it creates endless loop, so this is something I need to research more into. Other than this there were no more errors.
+
+
+# Bug fixes
 
 * Does game work on all devices: Yes!
 
@@ -174,6 +179,10 @@ https://icon-library.com/icon/rock-paper-scissors-icon-24.html
 * Is the computers choice random? Yes!
 
 * Does the score appear on the manscore and computer score sections? No! ... It should be appearing when the player or the computer win, or lose. I have been troubleshooting this for some days, as I see that the function isnt being translated to the site. I have tried writing various codes to call the function. So I am still working on this, as now I see the draw function was on its own loop, i see it need to combine the increment function with another.
+
+*Does the game calculate rounds? No, it does not function creating rounds, I have tried several different code combinations, but I need to experience javascript to fix these bugs. I am working on calling variables, and not making the mistake of creating a endless loop.
+
+*The game functions visually, but not pracitcally, the game clearly interacts well with the user as when a button is clicked, the computer automatically makes its choice. But thereafter there is no functionality on the score counter.
 
 
 
