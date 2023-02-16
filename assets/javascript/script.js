@@ -35,7 +35,7 @@ let computerNumber = 0; {
 for (let i = 0; i < 3; i++); {
 
     drawScore();
-};
+}
 
 
 //play the game, player choice and computers choice//
@@ -55,7 +55,7 @@ function playGame(playerChoice) {
 
 
     let computerChoice = Math.floor(Math.random() * 3);
-    //console.log(computerChoice);
+    
 
     if (computerChoice == "0") {
         computerImage.src = 'assets/images/rock.jpg';
@@ -97,7 +97,7 @@ function incrementScore() {
 }
 
 //score counter, who makes it to 3 points first wins//
-function drawScore(); {
+function drawScore() {
 
     if (playerScore >= 2 && computerScore >= 2) {
         document.getElementById(playerScore).innerHTML = "Its a tie";
