@@ -55,7 +55,7 @@ I this time drawn all my designs by hand, the next time I utilise wireframes. I 
 
 # Responsiveness:
 
-This website fits to size on all types of devices. From laptop to mobile phone. I editted the media queries only for the ipad sixe devices, as the rest of the devices were already responsive. The mobile phone game is little bit bigger, but the intention is to play the game with your phone titled horizontially.
+This website fits to size on all types of devices. From laptop to mobile phone. I editted the media queries only for the ipad size devices, as the rest of the devices were already responsive. The mobile phone game is little bit bigger, but the intention is to play the game with your phone titled horizontially.
 
 ![image](https://user-images.githubusercontent.com/120515252/219078949-cc83aa44-c420-4c1b-ac4b-d91b6b79d07a.png)
 
