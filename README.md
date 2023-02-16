@@ -1,6 +1,6 @@
 
 
-ROCK, PAPER, SCISSORS GAME!
+ROCK, PAPER, SCISSORS GAME! MAN VS MACHINE:
 
 ## Purpose of the game
 
