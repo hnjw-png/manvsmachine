@@ -190,7 +190,7 @@ There were some errors in the jshint, these were about how the incrementScore va
 
 # Deployment:
 
-I deployed my site through github pages, I this by going to settings, then to github pages, then to deploy.
+I deployed my site through github pages, then going to settings, then to github pages, then to build and deployment,  thn press deploy from branch, and then below select 'main' and then save. Thereafter Man vs Machine is deployed: 
 
 
 
