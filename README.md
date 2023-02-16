@@ -163,7 +163,7 @@ https://icon-library.com/icon/rock-paper-scissors-icon-24.html
 
 # JSHINT
 
-There were some errors in the jshint, these were about how the incrementScore variable, drascore variable. I know I should call them, but eveyrtime I do it creates endless loop, so this is something I need to research more into. Other than this there were no more errors.
+There were some errors in the jshint, these were about how the incrementScore variable, drawscore function.I need to research more into. Other than this there were no more errors.
 
 
 # Bug fixes
@@ -178,7 +178,7 @@ There were some errors in the jshint, these were about how the incrementScore va
 
 * Does the image change, when the appripriate button is clicked? Yes! Yes if you click rock, the rock image appears, and the same goes for paper and scissors.
 
-* Does the score appear on the manscore and computer score sections? No! ... It should be appearing when the player or the computer win, or lose. I have been troubleshooting this for some days, as I see that the function isn't being translated to the game. I have tried writing various codes to call the function. So I am still working on this, as now I see the draw function was on its own loop. I believe a gameover function and rounds played function could have been a good addition to the game code. In future I plan to fix these bugs and increment the score according to the rock, paper, scissors game parimeters. Then I would like the winner to be drawn out of three rounds, and pop up text showing stating the winner, loser or a tie. Then the game to restart.
+* Does the score appear on the manscore and computer score sections? No! ... It should be appearing when, the player or the computer, win or lose. I have been troubleshooting this for some days, as I see that the function isn't being translated to the game. I have tried writing various codes to call the function. So I am still working on this, as of now I see the draw function was on its own loop. I believe a gameover function and rounds played function could have been a good addition to the game code. In future I plan to fix these bugs and increment the score according to the rock, paper, scissors game parimeters. Then I would like the winner to be drawn out of three rounds, and pop-up text stating the winner, loser or a tie. Then the game to restart.
 
 * Does the game calculate rounds? No, it does not function creating rounds, I have tried several different code combinations, but I need to experience javascript to fix these bugs. I am working on calling variables, and not making the mistake of creating a endless loop.
 
