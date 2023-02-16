@@ -8,7 +8,7 @@ var playerImage = document.getElementById("man-image");
 
 var computerImage = document.getElementById("computer-image");
 
-const choice = ["Rock", "Paper", "Scissors"];
+const score = ["Rock", "Paper", "Scissors"];
 
 
 
@@ -27,14 +27,14 @@ let playerNumber = 0;
 let computerNumber = 0; {
     while (playerNumber != 3 && computerNumber != 3);
 
-    runGame(incrementScore);
-};
+    incrementScore();
+}
 
 //declaration for after 3 rounds, endgame and draw the score.
 
 for (let i = 0; i < 3; i++); {
 
-    runGame(drawScore);
+    drawScore();
 };
 
 
@@ -73,43 +73,43 @@ function playGame(playerChoice) {
 function incrementScore() {
 
     if (playerScore == "Rock" && computerScore == "2") {
-        playerScore = score + 1;
+        playerNumber = score + 1;
 
     } else if (playerScore == "Scissors" && computerScore == "0") {
-        computerScore = score + 1;
+        computerNumber = score + 1;
 
     } else if (playerScore == "Paper" && computerScore == "2") {
-        computerScore = score + 1;
+        computerNumber = score + 1;
 
     } else if (playerScore == "Rock" && computerScore == "1") {
-        computerScore = +1;
+        computerNumber = +1;
 
     } else if (playerScore == "Paper" && computerScore == "0") {
-        playerScore = score + 1;
+        playerNumber = score + 1;
 
     } else if (playerScore == "Scissors" && computerScore == "1") {
-        playerScore = score + 1;
+        playerNumber = score + 1;
 
     } else if (playerScore == computerScore); {
-        playerScore = score + 1;
+        playerNumber = score + 1;
         computerScore = score + 1;
     }
 }
 
 //score counter, who makes it to 3 points first wins//
-function drawScore() {
+function drawScore(); {
 
     if (playerScore >= 2 && computerScore >= 2) {
         document.getElementById(playerScore).innerHTML = "Its a tie";
         document.getElementById(computerScore).innerHTML = "its a tie";
 
     } else if (playerScore >= 2 && computerScore <= 1) {
-        parseInt(document.getElementById("playerScore").innerHTML) = "Winner";
-        parseInt(document.getElementById("computerScore").innerHTML) = "Loser";
+        document.getElementById(playerScore).innerHTML = "Winner";
+        document.getElementById(computerScore).innerHTML =  "Loser";
 
     } else if (playerScore <= 1 && computerScore >= 2) {
-        parseInt(document.getElementById("playerScore").innerHTML) = "Loser";
-        parseInt(document.getElementById("computerScore").innerHTML) = "Winner";
+        document.getElementById(playerScore).innerHTML ="Loser";
+        document.getElementById(computerScore).innerHTML = "Winner";
 
     }
 }
