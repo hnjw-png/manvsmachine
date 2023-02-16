@@ -22,22 +22,6 @@ for (let button of buttons) {
     });
 }
 
-//declaration for increment score//
-let playerNumber = 0;
-let computerNumber = 0; {
-    while (playerNumber != 3 && computerNumber != 3);
-
-    incrementScore();
-}
-
-//declaration for after 3 rounds, endgame and draw the score.
-
-for (let i = 0; i < 3; i++); {
-
-    drawScore();
-}
-
-
 //play the game, player choice and computers choice//
 function playGame(playerChoice) {
 
@@ -70,7 +54,7 @@ function playGame(playerChoice) {
 //calculate score, so it appears on the html (man-score, computerScore)
 
 //points decider//
-function incrementScore() {
+function playerNumber() {
 
     if (playerScore == "Rock" && computerScore == "2") {
         playerNumber = score + 1;
@@ -99,6 +83,8 @@ function incrementScore() {
 //score counter, who makes it to 3 points first wins//
 function drawScore() {
 
+        for (let i = 0; i < 3; i++) {
+         
     if (playerScore >= 2 && computerScore >= 2) {
         document.getElementById(playerScore).innerHTML = "Its a tie";
         document.getElementById(computerScore).innerHTML = "its a tie";
@@ -113,5 +99,8 @@ function drawScore() {
 
     }
 }
+}
+
+
 
 //last function restart game (with button or automatic refresh after 3 rounds)
