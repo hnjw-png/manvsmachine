@@ -74,14 +74,14 @@ Above you can see, the name of the game is very clear, as clearly written above 
 
 ## Instructions:
 
-There is a page/document attached to the website stating how to play the game and the rules of the game, etc how many rounds you play until winner is decided, and which rock, paper or scissors beats who.
+At the bottom of the page there is a section stating how to play the game and the rules of the game, etc how many rounds you play until winner is decided, and which rock, paper or scissors beats who.
 
 ![image](https://user-images.githubusercontent.com/120515252/219072320-38cfcc72-127d-452e-b57c-4785455e49fb.png)
 
 
 ## Main Game page:
 
-The main page is a simply page with a clear purpose, to play rock paper scissors. You can see clearly where to click, and where your score should appear. The only option currently is to play computer againist human, but not yet human to human.
+The main page is a simply page with a clear purpose, to play rock paper scissors. You can see clearly where to click the buttons, and where your score should appear. The only option currently is to play computer againist human, but not yet human to human.
 
 ![image](https://user-images.githubusercontent.com/120515252/219072581-3c6edf83-1b36-4e79-ae06-371a0dbe793b.png)
 
@@ -96,6 +96,7 @@ The start image for both player and user is a png of rock, paper and scissors im
 ## The Score counters:
 
 The score counter is alongside the 'man' and 'computer' headings, there your score will update with the correct score up to 3. The first who gets 2 points win, as its a best of three game. Thereafter the winner will be declared, with the words in the title. 'Winner or Loser'.
+
 ![image](https://user-images.githubusercontent.com/120515252/219072800-f31fe5b9-55ef-4391-a00f-c58b2fa1e035.png)
 
 ![image](https://user-images.githubusercontent.com/120515252/219072893-54ba23f0-d417-49ae-bbd5-862844975fb9.png)
@@ -116,7 +117,7 @@ The footer is a simple statement of 'do you like the game, follow us on facebook
 * Music in background
 * Start again button
 
-#Techologies used
+# Techologies used
 
 Languages used:
 
@@ -180,9 +181,11 @@ There were some errors in the jshint, these were about how the incrementScore va
 
 * Does the score appear on the manscore and computer score sections? No! ... It should be appearing when the player or the computer win, or lose. I have been troubleshooting this for some days, as I see that the function isnt being translated to the site. I have tried writing various codes to call the function. So I am still working on this, as now I see the draw function was on its own loop, i see it need to combine the increment function with another.
 
-*Does the game calculate rounds? No, it does not function creating rounds, I have tried several different code combinations, but I need to experience javascript to fix these bugs. I am working on calling variables, and not making the mistake of creating a endless loop.
+* Does the game calculate rounds? No, it does not function creating rounds, I have tried several different code combinations, but I need to experience javascript to fix these bugs. I am working on calling variables, and not making the mistake of creating a endless loop.
 
-*The game functions visually, but not pracitcally, the game clearly interacts well with the user as when a button is clicked, the computer automatically makes its choice. But thereafter there is no functionality on the score counter.
+* The game functions visually, but not pracitcally, the game clearly interacts well with the user as when a button is clicked, the computer automatically makes its choice. But thereafter there is no functionality on the score counter.
+
+# Deployment:
 
 
 
