@@ -51,34 +51,39 @@ function playGame(playerChoice) {
 }
 
 
+
+
+
+
+
 //calculate score, so it appears on the html (man-score, computerScore)
 
-//points decider//
-function playerNumber() {
+//points decider
+//let score (playerNumber, computerNumber) {
 
-    if (playerScore == "Rock" && computerScore == "2") {
-        playerNumber = score + 1;
+    //if (playerScore == "Rock" && computerScore == "2") {
+      //  playerNumber = score + 1;
 
-    } else if (playerScore == "Scissors" && computerScore == "0") {
-        computerNumber = score + 1;
+    // } else if (playerScore == "Scissors" && computerScore == "0") {
+       // computerNumber = score + 1;
 
-    } else if (playerScore == "Paper" && computerScore == "2") {
-        computerNumber = score + 1;
+    // } else if (playerScore == "Paper" && computerScore == "2") {
+       // computerNumber = score + 1;
 
-    } else if (playerScore == "Rock" && computerScore == "1") {
-        computerNumber = +1;
+    // } else if (playerScore == "Rock" && computerScore == "1") {
+     //   computerNumber = +1;
 
-    } else if (playerScore == "Paper" && computerScore == "0") {
-        playerNumber = score + 1;
+    // } else if (playerScore == "Paper" && computerScore == "0") {
+      //  playerNumber = score + 1;
 
-    } else if (playerScore == "Scissors" && computerScore == "1") {
-        playerNumber = score + 1;
+    // } else if (playerScore == "Scissors" && computerScore == "1") {
+      //  playerNumber = score + 1;
 
-    } else if (playerScore == computerScore); {
-        playerNumber = score + 1;
-        computerScore = score + 1;
-    }
-}
+    // } else if (playerScore == computerScore); {
+     //   playerNumber = score + 1;
+     //   computerScore = score + 1;
+    // }
+// }
 
 //score counter, who makes it to 3 points first wins//
 function drawScore() {
