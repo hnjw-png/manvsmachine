@@ -57,27 +57,26 @@ function updateScore() {
   let playerScore  = document.getElementById("man-score");
   let computerScore = document.getElementById("computer-score");
     
-  if (playerScore == "Rock" && computerScore == "2") {
-        
+     if (playerScore == "Rock" && computerScore == "2") {
 
      } else if (playerScore == "Scissors" && computerScore == "0") {
-        computerScore =+ 1;
+        computerScore += 1;
 
      } else if (playerScore == "Paper" && computerScore == "2") {
-        computerScore =+ 1;
+        computerScore += 1;
 
      } else if (playerScore == "Rock" && computerScore == "1") {
-        computerScore =+1;
+        computerScore += 1;
 
      } else if (playerScore == "Paper" && computerScore == "0") {
-        playerScore =+ 1;
+        playerScore += 1;
 
      } else if (playerScore == "Scissors" && computerScore == "1") {
-        playerScore =+ 1;
+        playerScore += 1;
 
      } else if (playerScore == computerScore); {
-        playerScore =+ 1;
-        computerScore =+ 1;
+        playerScore += 1;
+        computerScore += 1;
      }
     
     }
