@@ -1,14 +1,15 @@
 const buttons = document.getElementsByClassName('buttons');
 
-var playerScore = document.getElementById("man-score");
+let playerScore = document.getElementById("man-score");
 
-var computerScore = document.getElementById("computer-score");
+let computerScore = document.getElementById("computer-score");
 
 var playerImage = document.getElementById("man-image");
 
 var computerImage = document.getElementById("computer-image");
 
-const score = ["Rock", "Paper", "Scissors"];
+const choice = ["Rock", "Paper", "Scissors"];
+
 
 
 
@@ -48,59 +49,58 @@ function playGame(playerChoice) {
     } else if (computerChoice == "2") {
         computerImage.src = 'assets/images/scissors.jpg';
     }
+    
 }
 
+function updateScore() {
+  
+  let playerScore  = document.getElementById("man-score");
+  let computerScore = document.getElementById("computer-score");
+    
+  if (playerScore == "Rock" && computerScore == "2") {
+        
 
+     } else if (playerScore == "Scissors" && computerScore == "0") {
+        computerScore =+ 1;
 
+     } else if (playerScore == "Paper" && computerScore == "2") {
+        computerScore =+ 1;
 
+     } else if (playerScore == "Rock" && computerScore == "1") {
+        computerScore =+1;
 
+     } else if (playerScore == "Paper" && computerScore == "0") {
+        playerScore =+ 1;
 
+     } else if (playerScore == "Scissors" && computerScore == "1") {
+        playerScore =+ 1;
 
-//calculate score, so it appears on the html (man-score, computerScore)
+     } else if (playerScore == computerScore); {
+        playerScore =+ 1;
+        computerScore =+ 1;
+     }
+    
+    }
+  
 
-//points decider
-//let score (playerNumber, computerNumber) {
-
-    //if (playerScore == "Rock" && computerScore == "2") {
-      //  playerNumber = score + 1;
-
-    // } else if (playerScore == "Scissors" && computerScore == "0") {
-       // computerNumber = score + 1;
-
-    // } else if (playerScore == "Paper" && computerScore == "2") {
-       // computerNumber = score + 1;
-
-    // } else if (playerScore == "Rock" && computerScore == "1") {
-     //   computerNumber = +1;
-
-    // } else if (playerScore == "Paper" && computerScore == "0") {
-      //  playerNumber = score + 1;
-
-    // } else if (playerScore == "Scissors" && computerScore == "1") {
-      //  playerNumber = score + 1;
-
-    // } else if (playerScore == computerScore); {
-     //   playerNumber = score + 1;
-     //   computerScore = score + 1;
-    // }
-// }
 
 //score counter, who makes it to 3 points first wins//
-function drawScore() {
+
+function checkWinner() {
 
         for (let i = 0; i < 3; i++) {
          
     if (playerScore >= 2 && computerScore >= 2) {
-        document.getElementById(playerScore).innerHTML = "Its a tie";
-        document.getElementById(computerScore).innerHTML = "its a tie";
+        document.getElementById(playerScore).textContent = "Its a tie";
+        document.getElementById(computerScore).textContent = "its a tie";
 
     } else if (playerScore >= 2 && computerScore <= 1) {
-        document.getElementById(playerScore).innerHTML = "Winner";
-        document.getElementById(computerScore).innerHTML =  "Loser";
+        document.getElementById(playerScore).textContent = "Winner";
+        document.getElementById(computerScore).textContent =  "Loser";
 
     } else if (playerScore <= 1 && computerScore >= 2) {
-        document.getElementById(playerScore).innerHTML ="Loser";
-        document.getElementById(computerScore).innerHTML = "Winner";
+        document.getElementById(playerScore).textContent ="Loser";
+        document.getElementById(computerScore).textContent = "Winner";
 
     }
 }
