@@ -64,7 +64,7 @@ function incrementScore() {
     if (playerScore == "Rock" && computerScore == "2") {
 
      } else if (playerScore == "Scissors" && computerScore == "0") {
-        document.getMyElementById("computerScore").innerHTML+= 1;
+        computerScore += 1;
 
       } else if (playerScore == "Paper" && computerScore == "2") {
         computerScore += 1;
@@ -86,8 +86,6 @@ function incrementScore() {
      }
 
     
-     
-
 function winGame() {
     if (playerScore == 5) {
         return "You win!"
