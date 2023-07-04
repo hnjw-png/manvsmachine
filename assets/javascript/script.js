@@ -50,55 +50,48 @@ function playGame(playerChoice) {
     
 }
 
-let playerChoice = 0;
-let computerChoice = 0; 
+function incrementScore(playerScore, computerScore) {
 
-function incrementScore() {
-
-    let playerScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
-    
-    let computerScore= parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
-    
     if (playerScore == "Rock" && computerScore == "2") {
+        playerScore.innerText += 1;
+        console.log("i did something");
+
 
      } else if (playerScore == "Scissors" && computerScore == "0") {
-        computerScore += 1;
+        computerScore.innerText +=1;
+
 
       } else if (playerScore == "Paper" && computerScore == "2") {
-        computerScore += 1;
+        computerScore.innerText += 1;
 
       } else if (playerScore == "Rock" && computerScore == "1") {
-        computerScore += 1;
+        computerScore.innerText += 1; 
 
      } else if (playerScore == "Paper" && computerScore == "0") {
-       playerScore += 1;
+       playerScore.innerText += 1;
 
      } else if (playerScore == "Scissors" && computerScore == "1") {
-        playerScore += 1;
+        playerScore.innerText += 1;
 
      } else if (playerScore == computerScore); {
-       playerScore += 1;
-       computerScore += 1;
+       playerScore.innerText += 1;
+       computerScore.innerText += 1;
      }
     
      }
 
     
 function winGame() {
-    if (playerScore == 5) {
-        return "You win!"
-    } else if (computerScore == 5) {
-        return "You lose!"
-    }
+       if (playerScore == 5) {
+       return "You win!"
+   } else if (computerScore == 5) {
+       return "You lose!"
+   }
 }
 
-game();
+
 
   
-
-
 //score counter, who makes it to 3 points first wins//
 
 //function checkWinner() {
