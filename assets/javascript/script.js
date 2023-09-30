@@ -47,50 +47,79 @@ function playGame(playerChoice) {
     } else if (computerChoice == "2") {
         computerImage.src = 'assets/images/scissors.jpg';
     }
-    
+
+    determineWinner(playerChoice, computerChoice);
 }
 
-function incrementScore(playerScore, computerScore) {
+const determineWinner = (userInput, computerChoice) => {
+    if (userInput === computerChoice){
+      return 'The game is a tie!';
+    }
+    if (userInput === 'rock') {
+      if (computerChoice === '1') {
+        return 'Computer Wins!';
+      }
+      else {
+        return 'User Wins!';
+      }
+    }
+    if (userInput === 'paper') {
+      if (computerChoice === '2') {
+        return 'Computer Wins!';
+      }
+      else {
+        return 'User Wins!';
+      }
+    }
+    if (userInput === 'scissors') {
+      if (computerChoice === '0') {
+        return 'Computer Wins!';
+      }
+      else {
+        return 'User Wins!';
+      }
+    }
+  };
 
-    if (playerScore == "Rock" && computerScore == "2") {
-        playerScore.innerText += 1;
-        console.log("i did something");
+
+//function incrementScore(playerScore, computerScore) {
+
+//    if (playerImage == "Rock" && computerImage == "Paper") {
+//    playerScore.innerText += 1;
+//        console.log("i did something");
 
 
-     } else if (playerScore == "Scissors" && computerScore == "0") {
-        computerScore.innerText +=1;
+    // } else if (playerImage == "Scissors" && computerImage == "Rock") {
+        //score = score + 1 
 
 
-      } else if (playerScore == "Paper" && computerScore == "2") {
-        computerScore.innerText += 1;
+     // } else if (playerImage == "Paper" && computerImage == "Scissors") {
+        //computerScore.innerText += 1;
 
-      } else if (playerScore == "Rock" && computerScore == "1") {
-        computerScore.innerText += 1; 
+      // } else if (playerImage == "Rock" && computerImage == "Paper") {
+        // computerScore.innerText += 1; 
 
-     } else if (playerScore == "Paper" && computerScore == "0") {
-       playerScore.innerText += 1;
+     // } else if (playerImage == "Paper" && computerImage == "Rock") {
+      //  playerScore.innerText += 1;
 
-     } else if (playerScore == "Scissors" && computerScore == "1") {
-        playerScore.innerText += 1;
+     // } else if (playerImage == "Scissors" && computerImage == "Paper") {
+       // playerScore.innerText += 1;
 
-     } else if (playerScore == computerScore); {
-       playerScore.innerText += 1;
-       computerScore.innerText += 1;
-     }
+     // } else if (playerImage == computerImage); {
+       // playerScore.innerText += 1;
+       // computerScore.innerText += 1;
+     // }
     
-     }
+    // }
 
     
-function winGame() {
-       if (playerScore == 5) {
-       return "You win!"
-   } else if (computerScore == 5) {
-       return "You lose!"
-   }
-}
-
-
-
+// function winGame() {
+    //   if (playerScore == 5) {
+      // return "You win!"
+   // } else if (computerScore == 5) {
+      // return "You lose!"
+   // }
+// }
   
 //score counter, who makes it to 3 points first wins//
 
