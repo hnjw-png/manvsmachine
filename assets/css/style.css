@@ -101,26 +101,39 @@ footer {
 
 /*media query for ipads, as this is the only screen size the footer floats up on.*/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
+
+    #header {
+        margin-left: 50px;
+       
+    }
+
+    #title {
+        font-size: 1rem;
+        text-align: center;
+    }
 
     #man-image {
-        width: 100px;
-        margin: 0;
+        width: 150px;
+        margin: 130px;
+        margin-top: 5px;
+        margin-bottom: 0px;
       
-        
-        
-        
     }
 
 
-    
     #computer-image {
-        width: 100px;
-        margin: 0;
+        width: 150px;
+        margin: 130px;
+        margin-top: 5px;
     
     }
 
     #player {
+        font-size: 3rem;
+    }
+
+    #instructions {
         font-size: 1rem;
     }
 
@@ -128,3 +141,6 @@ footer {
         margin-top: 200px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    
