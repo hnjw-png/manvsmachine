@@ -4,9 +4,9 @@ ROCK, PAPER, SCISSORS GAME! MAN VS MACHINE:
 
 ## Purpose of the game
 
-Is to have a interactive game, which plays rounds of three and calculates the score based on the rules of rock, paper, scissors. It will consist of three buttons, one for rock, paper and scissors, when pressed by the user, they will perform a action, the action is that when the button is clicked; it will generate a picture of rock paper or scissors. Simaltanueosly the computer will also choose either rock, paper, scissora at random. Each time the computer and the humans score will be talled, up to rounds of three, who ever gets to 2 points first wins.
+Is to have a interactive game, which plays rounds of three and calculates the score based on the rules of rock, paper, scissors. It will consist of three buttons, one for rock, paper and scissors, when pressed by the user, they will perform a action, the action is that when the button is clicked; it will generate a picture of rock paper or scissors. Simaltanueosly the computer will also choose either rock, paper, scissora at random. Each time the computer and the humans score will appear, you enjoy a invigarating experience of luck and chance...and to play against a virtual friend, the computer!
 
-![image](https://user-images.githubusercontent.com/120515252/219453014-3c9db802-604a-4cc3-8567-ff817d05b132.png)
+[image](https://user-images.githubusercontent.com/120515252/219453014-3c9db802-604a-4cc3-8567-ff817d05b132.png)
 
 
 # User Experience/User Interface (UX/UI)
@@ -23,16 +23,18 @@ When the visitor first visits the game:
 ## Frequent Visitor goals:
 
 * To be able to play the game on any devices.
-* If a round has not been completed you can resume where you left of, unless you have refreshed the page.
+* It should be clear who won each time, with no time delay.
 * The computers choice will always be random, no matter how many times played. 
 
 ## Website owner goals:
 
-* The game should be able to keep score between the player and the computer, and calculate a winner.
+* The game should be able to recognise between the player and the computer, and calculate a winner.
 * To provide a fun and inticing game, with simplicity.
 * To give people a experience of playing a game, for one person.
 * The game is designed so it would be easy to visit the game again, as everytime you click Rock, Paper or Scissors, you get a automatic comeback from the computer.
 * To encourage continued playing of the game.
+* To play a game of chance and luck, and play a game that is fair as the guess is always random.
+*Feel interaction from the computer.
 
 
 # Color Scheme
@@ -58,7 +60,7 @@ I this time drawn all my designs by hand, the next time I utilise wireframes. I 
 
 # Responsiveness:
 
-This website fits to size on all types of devices. From laptop to mobile phone. I editted the media queries only for the ipad size devices, as the rest of the devices were already responsive. The mobile phone game is little bit bigger, but the intention is to play the game with your phone titled horizontially.
+This website fits to size on all types of devices. From laptop to mobile phone. I editted the media queries for the ipad size devices and smaller devices, as the rest of the devices were already responsive. The mobile phone game is little bit bigger, but the intention is to play the game with your phone titled horizontially. In the game on the computer, laptop or large iPad you play the game horizontially aand smalled devices such as mobiles you play vertically. 
 
 ![image](https://user-images.githubusercontent.com/120515252/219078949-cc83aa44-c420-4c1b-ac4b-d91b6b79d07a.png)
 
@@ -77,7 +79,7 @@ Above you can see, the name of the game is very clear, as clearly written above 
 
 ## Instructions:
 
-At the bottom of the page there is a section stating how to play the game and the rules of the game, etc how many rounds you play until winner is decided, and which rock, paper or scissors beats who.
+At the bottom of the page there is a section stating how to play the game and the rules of the game. 
 
 ![image](https://user-images.githubusercontent.com/120515252/219072320-38cfcc72-127d-452e-b57c-4785455e49fb.png)
 
@@ -114,7 +116,8 @@ The footer is a simple statement of 'do you like the game, follow us on facebook
 
 # Possible Future Features:
 
-* A highscore calculator
+* A score and highscore calculator
+* A reset button
 * The function to play human to human
 * A more interactive start page, that appears before you begin the game
 * Music in background
@@ -168,21 +171,23 @@ There were some errors in the jshint, these were about how the incrementScore va
 
 # Bug fixes
 
-* Does game work on all devices: Yes! I added a media query to ipad sized devices, the other screens worked perfectly without.
+* Does game work on all devices: Yes! I added a media query to ipad sized devices.
 
 * Are instructions clear to the user: Yes! I tested this myself and also tested it with a friend.
 
-* Is the games purpose obvious? Yes! It is very obvious where to click and where your score results will appear. The color scheme and font sizing work well on all devices.
+* Is the games purpose obvious? Yes! It is very obvious where to click and who wins is clearly appears on the screen upon each round. The color scheme and font sizing work well on all devices.
 
 * Does the computer play the game automatically after a player choice? Yes! The players clicks a option and the computer automatically picks one at random.
 
 * Does the image change, when the appripriate button is clicked? Yes! Yes if you click rock, the rock image appears, and the same goes for paper and scissors.
 
-* Does the score appear on the manscore and computer score sections? No! ... It should be appearing when, the player or the computer, win or lose. I have been troubleshooting this for some days, as I see that the function isn't being translated to the game. I have tried writing various codes to call the function. So I am still working on this, as of now I see the draw function was on its own loop. I believe a gameover function and rounds played function could have been a good addition to the game code. In future I plan to fix these bugs and increment the score according to the rock, paper, scissors game parimeters. Then I would like the winner to be drawn out of three rounds, and pop-up text stating the winner, loser or a tie. Then the game to restart.
+*THIS FUNCTION NO LONGER IS REQUIRED, FOR FUNCTIONALITY OF GAME. Does the score appear on the manscore and computer score sections? No! ... It should be appearing when, the player or the computer, win or lose. I have been troubleshooting this for some days, as I see that the function isn't being translated to the game. I have tried writing various codes to call the function. So I am still working on this, as of now I see the draw function was on its own loop. I believe a gameover function and rounds played function could have been a good addition to the game code. In future I plan to fix these bugs and increment the score according to the rock, paper, scissors game parimeters. Then I would like the winner to be drawn out of three rounds, and pop-up text stating the winner, loser or a tie. Then the game to restart. - This was never acheived and instead resolved with a string stating who
 
-* Does the game calculate rounds? No, it does not function creating rounds, I have tried several different code combinations, but I need to experience javascript to fix these bugs. I am working on calling variables, and not making the mistake of creating a endless loop.
+*tHIS FUNCTION IS NO LONGER REQUIRED FOR FUNCTIONALITY OF GAME: Does the game calculate rounds? No, it does not function creating rounds, I have tried several different code combinations, but I need to experience javascript to fix these bugs. I am working on calling variables, and not making the mistake of creating a endless loop.
 
-* The game functions visually, but not practically, the game clearly interacts well with the user as when a button is clicked, the computer automatically makes its choice. But thereafter there is no functionality on the score counter. In the future, I will go back, and fix the game so the user experience is 100%, that the player knows how many points he/she has and they can then know who is the winner. Then the full experience of the game will be executed.
+* BUG FIXED: The game functions visually, but not practically, the game clearly interacts well with the user as when a button is clicked, the computer automatically makes its choice. But thereafter there is no functionality on the score counter. In the future, I will go back, and fix the game so the user experience is 100%, that the player knows how many points he/she has and they can then know who is the winner. Then the full experience of the game will be executed.
+
+* In the final edit I could not succeed in creating a score board so instead created a much more interaction and fun mesaage that appears each round, showing which one won, the computer or the human. This creates a meaning to the game in the future, I would work again on adding a score board. This functions perfectly with the logic of the game of rock, paper, scissors.
 
 # Deployment:
 
