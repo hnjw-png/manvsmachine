@@ -28,8 +28,9 @@ header {
 
 #player {
     text-align: center;
-    font-size: 1rem;
+    font-size: 4rem;
     font-family: "Lobster";
+    
 }
 
 #computer {
@@ -41,22 +42,20 @@ header {
 }
 
 #man-image {
-    margin-left: 45%;
-    margin-right: auto;
-    width: 10%;
-    text-align: center;
+    display: inline-block;
+    width: 300px;
+    margin-left: 350px;
+    
     
 }
 
 #computer-image {
-    margin-left: 45%;
-    margin-right: auto;
-    width: 10%;
-    text-align: center;
-    margin-bottom: 50px;
-
+    display: inline-block;
+    width: 300px;
+    
 
 }
+
 
 /*hide images, only display when button is clicked*/
 
@@ -77,7 +76,7 @@ header {
 #instructions {
     color:white;
     font-family: "Lobster";
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
     background-color: rgba(32, 165, 194, 0.8);
 }
@@ -103,6 +102,20 @@ footer {
 /*media query for ipads, as this is the only screen size the footer floats up on.*/
 
 @media screen and (max-width: 800px) {
+
+    #man-image {
+        width: 100px;
+      
+        
+        
+        
+    }
+    
+    #computer-image {
+        width: 100px;
+        
+    
+    }
 
     footer {
         margin-top: 200px;

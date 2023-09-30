@@ -19,7 +19,7 @@ for (let button of buttons) {
         let playerChoice = this.innerText;
         playGame(playerChoice);
     });
-} 
+}
 
 //play the game, player choice and computers choice//
 function playGame(playerChoice) {
@@ -38,7 +38,7 @@ function playGame(playerChoice) {
 
 
     let computerChoice = Math.floor(Math.random() * 3);
-    
+
 
     if (computerChoice == "0") {
         computerImage.src = 'assets/images/rock.jpg';
@@ -48,40 +48,39 @@ function playGame(playerChoice) {
         computerImage.src = 'assets/images/scissors.jpg';
     }
 
-    determineWinner(playerChoice, computerChoice);
+    const winnerString = determineWinner(playerChoice.toLowerCase(), computerChoice.toString());
+    const displayWinner = document.getElementById('man-score');
+    displayWinner.innerHTML = winnerString;
 }
 
-const determineWinner = (userInput, computerChoice) => {
-    if (userInput === computerChoice){
-      return 'The game is a tie!';
+const determineWinner = (playerChoice, computerChoice) => {
+    if (playerChoice === computerChoice) {
+        return 'The game is a tie!';
     }
-    if (userInput === 'rock') {
-      if (computerChoice === '1') {
-        return 'Computer Wins!';
-      }
-      else {
-        return 'User Wins!';
-      }
+    if (playerChoice === 'rock') {
+        if (computerChoice === '1') {
+            return 'Computer Wins!';
+        } else {
+            return 'User Wins!';
+        }
     }
-    if (userInput === 'paper') {
-      if (computerChoice === '2') {
-        return 'Computer Wins!';
-      }
-      else {
-        return 'User Wins!';
-      }
+    if (playerChoice === 'paper') {
+        if (computerChoice === '2') {
+            return 'Computer Wins!';
+        } else {
+            return 'User Wins!';
+        }
     }
-    if (userInput === 'scissors') {
-      if (computerChoice === '0') {
-        return 'Computer Wins!';
-      }
-      else {
-        return 'User Wins!';
-      }
+    if (playerChoice === 'scissors') {
+        if (computerChoice === '0') {
+            return 'Computer Wins!';
+        } else {
+            return 'User Wins!';
+        }
     }
-  };
+};
 
-
+//increment
 //function incrementScore(playerScore, computerScore) {
 
 //    if (playerImage == "Rock" && computerImage == "Paper") {
@@ -89,57 +88,57 @@ const determineWinner = (userInput, computerChoice) => {
 //        console.log("i did something");
 
 
-    // } else if (playerImage == "Scissors" && computerImage == "Rock") {
-        //score = score + 1 
+// } else if (playerImage == "Scissors" && computerImage == "Rock") {
+//score = score + 1 
 
 
-     // } else if (playerImage == "Paper" && computerImage == "Scissors") {
-        //computerScore.innerText += 1;
+// } else if (playerImage == "Paper" && computerImage == "Scissors") {
+//computerScore.innerText += 1;
 
-      // } else if (playerImage == "Rock" && computerImage == "Paper") {
-        // computerScore.innerText += 1; 
+// } else if (playerImage == "Rock" && computerImage == "Paper") {
+// computerScore.innerText += 1; 
 
-     // } else if (playerImage == "Paper" && computerImage == "Rock") {
-      //  playerScore.innerText += 1;
+// } else if (playerImage == "Paper" && computerImage == "Rock") {
+//  playerScore.innerText += 1;
 
-     // } else if (playerImage == "Scissors" && computerImage == "Paper") {
-       // playerScore.innerText += 1;
+// } else if (playerImage == "Scissors" && computerImage == "Paper") {
+// playerScore.innerText += 1;
 
-     // } else if (playerImage == computerImage); {
-       // playerScore.innerText += 1;
-       // computerScore.innerText += 1;
-     // }
-    
-    // }
-
-    
-// function winGame() {
-    //   if (playerScore == 5) {
-      // return "You win!"
-   // } else if (computerScore == 5) {
-      // return "You lose!"
-   // }
+// } else if (playerImage == computerImage); {
+// playerScore.innerText += 1;
+// computerScore.innerText += 1;
 // }
-  
+
+// }
+
+
+// function winGame() {
+//   if (playerScore == 5) {
+// return "You win!"
+// } else if (computerScore == 5) {
+// return "You lose!"
+// }
+// }
+
 //score counter, who makes it to 3 points first wins//
 
 //function checkWinner() {
 
-       // for (let i = 0; i < 3; i++) {
-         
-    // if (playerScore >= 2 && computerScore >= 2) {
-     //   document.getElementById(playerScore).textContent = "Its a tie";
-      //  document.getElementById(computerScore).textContent = "its a tie";
+// for (let i = 0; i < 3; i++) {
 
-   // } else if (playerScore >= 2 && computerScore <= 1) {
-    //    document.getElementById(playerScore).textContent = "Winner";
-    //    document.getElementById(computerScore).textContent =  "Loser";
+// if (playerScore >= 2 && computerScore >= 2) {
+//   document.getElementById(playerScore).textContent = "Its a tie";
+//  document.getElementById(computerScore).textContent = "its a tie";
 
-    // } else if (playerScore <= 1 && computerScore >= 2) {
-     //   document.getElementById(playerScore).textContent ="Loser";
-     //   document.getElementById(computerScore).textContent = "Winner";
+// } else if (playerScore >= 2 && computerScore <= 1) {
+//    document.getElementById(playerScore).textContent = "Winner";
+//    document.getElementById(computerScore).textContent =  "Loser";
 
-    // }
+// } else if (playerScore <= 1 && computerScore >= 2) {
+//   document.getElementById(playerScore).textContent ="Loser";
+//   document.getElementById(computerScore).textContent = "Winner";
+
+// }
 // }
 // }
 
