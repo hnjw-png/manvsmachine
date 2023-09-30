@@ -101,20 +101,27 @@ footer {
 
 /*media query for ipads, as this is the only screen size the footer floats up on.*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 400px) {
 
     #man-image {
         width: 100px;
+        margin: 0;
       
         
         
         
     }
+
+
     
     #computer-image {
         width: 100px;
-        
+        margin: 0;
     
+    }
+
+    #player {
+        font-size: 1rem;
     }
 
     footer {
