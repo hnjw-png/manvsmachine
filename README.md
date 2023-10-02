@@ -193,6 +193,7 @@ NO problems in JShint.
 
 * In the final edit I could not succeed in creating a score board so instead created a much more interactive message that appears each round, showing which one won, the computer or the human. This creates a meaning to the game in the future, I would work again on adding a score board. This functions perfectly with the logic of the game of rock, paper, scissors.
 
+* The footer is veru basic, in the future I will use a icon instead of written word.
 # Deployment:
 
 I deployed my site through github pages, then going to settings, then to github pages, then to build and deployment,  thn press deploy from branch, and then below select 'main' and then save. Thereafter Man vs Machine is deployed: 
