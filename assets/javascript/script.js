@@ -1,14 +1,10 @@
 const buttons = document.getElementsByClassName('buttons');
 
-let playerScore = document.getElementById("man-score");
-
-let computerScore = document.getElementById("computer-score");
-
 var playerImage = document.getElementById("man-image");
 
 var computerImage = document.getElementById("computer-image");
 
-const choice = ["Rock", "Paper", "Scissors"];
+
 
 
 
