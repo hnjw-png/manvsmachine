@@ -199,7 +199,9 @@ I deployed my site through github pages, then going to settings, then to github 
 https://hnjw-png.github.io/man.vs.machine/
 
 
+# Credits
 
+I used a book called javascript for beginners, I have used resources from w3c and stack overflow. As well as the code institute material.
 
 
 
