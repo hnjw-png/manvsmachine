@@ -62,7 +62,8 @@ I this time drawn all my designs by hand, the next time I utilise wireframes. I 
 
 This website fits to size on all types of devices. From laptop to mobile phone. I editted the media queries for the ipad size devices and smaller devices, as the rest of the devices were already responsive. The mobile phone game is little bit bigger, but the intention is to play the game with your phone titled horizontially. In the game on the computer, laptop or large iPad you play the game horizontially aand smalled devices such as mobiles you play vertically. 
 
-![image](https://user-images.githubusercontent.com/120515252/219078949-cc83aa44-c420-4c1b-ac4b-d91b6b79d07a.png)
+![image](https://github.com/hnjw-png/man.vs.machine/assets/120515252/4ccd91f2-1259-4040-be87-b393e08c92bf)
+
 
 # Features:
 
@@ -81,14 +82,16 @@ Above you can see, the name of the game is very clear, as clearly written above 
 
 At the bottom of the page there is a section stating how to play the game and the rules of the game. 
 
-![image](https://user-images.githubusercontent.com/120515252/219072320-38cfcc72-127d-452e-b57c-4785455e49fb.png)
+![image](https://github.com/hnjw-png/man.vs.machine/assets/120515252/ce035d43-5b5e-4348-8a67-a58e6fac6ea5)
+
 
 
 ## Main Game page:
 
 The main page is a simply page with a clear purpose, to play rock paper scissors. You can see clearly where to click the buttons, and where your score should appear. The only option currently is to play computer againist human, but not yet human to human.
 
-![image](https://user-images.githubusercontent.com/120515252/219072581-3c6edf83-1b36-4e79-ae06-371a0dbe793b.png)
+![image](https://github.com/hnjw-png/man.vs.machine/assets/120515252/4ec939db-f1b1-43d7-81ec-ddb9ef1e38cc)
+
 
 
 ## The RPS images:
@@ -98,13 +101,11 @@ The start image for both player and user is a png of rock, paper and scissors im
 ![image](https://user-images.githubusercontent.com/120515252/219079363-fb94cc88-9743-4f93-892f-fd5bae860ba6.png) ![image](https://user-images.githubusercontent.com/120515252/219072673-4fa8ba7d-2926-4d36-9221-6c16ba47c61b.png)
 
 
-## The Score counters:
+## Who wins notification:
 
-The score counter is alongside the 'man' and 'computer' headings, there your score will update with the correct score up to 3. The first who gets 2 points win, as its a best of three game. Thereafter the winner will be declared, with the words in the title. 'Winner or Loser'.
+Above the player images, you see who wins each time you choose rock, paper or scissors. If its a draw the user always wins. 
 
-![image](https://user-images.githubusercontent.com/120515252/219072800-f31fe5b9-55ef-4391-a00f-c58b2fa1e035.png)
-
-![image](https://user-images.githubusercontent.com/120515252/219072893-54ba23f0-d417-49ae-bbd5-862844975fb9.png)
+![image](https://github.com/hnjw-png/man.vs.machine/assets/120515252/2526ba88-0789-4b2b-a69a-bc43a7d3ce30)
 
 # Footer:
 
