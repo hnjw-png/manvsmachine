@@ -33,18 +33,12 @@ header {
     
 }
 
-#computer {
-    text-align: center;
-    font-size: 1rem;
-    font-family: "Lobster";
-  
-
-}
 
 #man-image {
     display: inline-block;
     width: 300px;
-    margin-left: 350px;
+    margin-left: 300px;
+    
     
     
 }
@@ -103,44 +97,65 @@ footer {
 
 @media screen and (max-width: 500px) {
 
-    #header {
-        margin-left: 50px;
-       
-    }
-
-    #title {
-        font-size: 1rem;
-        text-align: center;
+    header {
+        font-size: 2rem;
     }
 
     #man-image {
-        width: 150px;
-        margin: 130px;
-        margin-top: 5px;
-        margin-bottom: 0px;
-      
+        border: 0px; 
+        margin: auto auto; 
+        width: 120px;
     }
-
 
     #computer-image {
-        width: 150px;
-        margin: 130px;
-        margin-top: 5px;
-    
+        border: 0px; 
+        margin: auto auto; 
+        width: 120px;
     }
 
+
+
     #player {
-        font-size: 3rem;
+        font-size: 2rem;
     }
+
 
     #instructions {
         font-size: 1rem;
     }
 
-    footer {
-        margin-top: 200px;
-    }
+    
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) and (min-width: 500px) {
+
+    #man-image {
+        width:200px;
+        margin-left: 200px;
+    
+
+    }
+
+    #computer-image {
+        width: 200px;
+
+    }
+
+    #instructions {
+        margin-bottom: 200px; 
+    }
+    
+
+
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1300px) {
+
+    #man-image {
+        margin-left: 400px;
+    }
+
+
+}
+
     
