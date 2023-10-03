@@ -4,7 +4,8 @@ ROCK, PAPER, SCISSORS GAME! MAN VS MACHINE:
 
 ## Purpose of the game
 
-Is to have a interactive game, which plays rounds of three and calculates the score based on the rules of rock, paper, scissors. It will consist of three buttons, one for rock, paper and scissors, when pressed by the user, they will perform a action, the action is that when the button is clicked; it will generate a picture of rock paper or scissors. Simaltanueosly the computer will also choose either rock, paper, scissora at random. Each time the computer and the humans score will appear, you enjoy a invigarating experience of luck and chance...and to play against a virtual friend, the computer!
+Is to have a interactive game, calculates who wins or loses, based on the rules of rock, paper, scissors. It will consist of three buttons, one for rock, paper and scissors, when pressed by the user, they will perform a action, the action is that when the button is clicked; it will generate a picture of rock paper or scissors. Simaltanueosly the computer will also choose either rock, paper, scissors at random. Each time the computer and the humans score will appear, you enjoy a invigarating experience of luck and chance...and to play against a virtual friend, the computer!
+If it is a draw, the user always wins.
 
 [image](https://user-images.githubusercontent.com/120515252/219453014-3c9db802-604a-4cc3-8567-ff817d05b132.png)
 
@@ -19,6 +20,7 @@ When the visitor first visits the game:
 * The games color coordination and layout, makes the game attracive from the first load, its clear to read and the color are easy colors for the eyes.
 * The game should work properly, upon user interaction.
 * The game should look good and function on all devices.
+* The game is self explainatary, the only difference than usual is that when you draw the same, the human wins everytime.
 
 ## Frequent Visitor goals:
 
