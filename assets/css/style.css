@@ -90,6 +90,7 @@ footer {
 
 #facebook {
     float: right;
+    font-size: 1rem;
 }
 
 
@@ -122,6 +123,7 @@ footer {
 
     #instructions {
         font-size: 1rem;
+        margin-bottom: 150px;
     }
 
     
